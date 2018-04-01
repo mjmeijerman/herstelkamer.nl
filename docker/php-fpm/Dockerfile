@@ -1,7 +1,4 @@
 FROM php:7.0-fpm
 
-RUN useradd -ms /bin/bash web
-
-USER web
-
-WORKDIR /app
+RUN docker-php-ext-install pdo_mysql \
+    && docker-php-ext-install json
