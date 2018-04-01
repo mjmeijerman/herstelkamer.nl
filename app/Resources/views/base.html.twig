@@ -2,12 +2,23 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Herstelkamer Nootdorp{% endblock %}</title>
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
         {% block stylesheets %}{% endblock %}
+
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
         {% block body %}{% endblock %}
+        <div class="row" style="line-height: 50px;"></div>
+
+
+
+        <script src="{{ asset('js/jquery.js') }}" type="application/javascript"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}" type="application/javascript"></script>
+        {#<script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>#}
+        <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
