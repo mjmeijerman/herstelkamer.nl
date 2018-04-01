@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker run --rm --interactive --tty     --volume $PWD:/var/www/html     --user $(id -u):$(id -g)     composer require -d /var/www/html

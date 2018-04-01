@@ -1,0 +1,9 @@
+#!/bin/sh
+
+docker exec 3c2ba3f18929 /var/www/html/bin/console
+
+echo What command do you want to run?
+
+read command
+
+docker exec 3c2ba3f18929 /var/www/html/bin/console $command
