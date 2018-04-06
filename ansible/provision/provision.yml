@@ -1,0 +1,58 @@
+- name: Herstelkamer main
+  hosts: all
+  become: yes
+  remote_user: "{{ ssh_provision_user }}"
+
+  roles:
+    - f500.debian
+    - install_apt_packages
+    - f500.locale
+    - f500.bashrc
+    - f500.vim
+    - f500.nginx
+    - HanXHX.mysql
+    - f500.php7
+    - f500.php_composer
+    - f500.ufw
+    - f500.ufw_rules
+    - f500.ntp
+
+  tasks:
+    - name: Create the logs folder
+      file: path=/home/logs state=directory
+
+    - name: Add write privileges for the web user
+      acl: name=/home/logs entity={{ nginx_user }} etype=user permissions=rw default=yes state=present
+
+    - name: Add github.com to known_hosts file
+      lineinfile: dest=/etc/ssh/ssh_known_hosts line="{{ lookup('pipe', 'ssh-keyscan github.com') }}" state=present  create=yes mode=0644
+
+  handlers:
+    - include: handlers/main.yml
+
+- name: Herstelkamer vagrant only
+  hosts: vagrant
+  become: yes
+  remote_user: "{{ ssh_provision_user }}"
+
+  tasks:
+
+    - name: Add the .profile, CD /vagrant directory on SSH
+      lineinfile: dest=/home/vagrant/.profile insertafter=EOF line="cd {{ project_root }}"
+
+    - name: Add personal authorized key
+      authorized_key: user=vagrant key="{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+
+    - name: Create the file, if it doesnt exist already
+      shell: "[ -f parameters.yml ] || cp parameters.yml.dist parameters.yml chdir={{ project_root }}/app/config"
+
+    - name: Composer install
+      become: no
+      command: "composer install chdir={{ project_root }}"
+
+    - name: Perform migrations
+      become: no
+      command: "bin/console doctrine:migrations:migrate --no-interaction chdir={{ project_root }}"
+
+  handlers:
+    - include: handlers/main.yml
