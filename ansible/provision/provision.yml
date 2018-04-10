@@ -31,7 +31,7 @@
     - include: handlers/main.yml
 
 - name: Herstelkamer vagrant only
-  hosts: vagrant
+  hosts: vagrant, vagrant-in-box
   become: yes
   remote_user: "{{ ssh_provision_user }}"
 
