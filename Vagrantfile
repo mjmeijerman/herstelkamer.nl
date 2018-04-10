@@ -14,6 +14,7 @@ Vagrant.configure(2) do |config|
             vb.customize ["modifyvm", :id, "--cpus", "1"]
             vb.customize ["modifyvm", :id, "--memory", "2048"]
             vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+            vb.gui = true
         end
 
         config.vm.provision :ansible do |ansible|
