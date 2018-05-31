@@ -114,7 +114,8 @@ a:hover, a:active {
 			/* CONTENT */
 
 #content {
-	width: 80%;
+	width: 85%;
+	max-width: 1500px;
 }
 
 #content .article {
@@ -244,7 +245,7 @@ a:hover, a:active {
 }
 
 #footer #footer_container {
-	width: 68%;
+	width: 70%;
 	display: flex;
 }
 
