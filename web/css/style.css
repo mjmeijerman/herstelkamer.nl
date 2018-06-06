@@ -141,6 +141,21 @@ a:hover, a:active {
 	text-align: right;
 }
 
+#content .button {
+	font-family: OpenSans, Calibri, sans-serif;
+	font-size: 1.2em;
+	background: #00137F;
+	color: #FFF;
+	border-radius: 5px;
+	padding: .3em 1.1em;
+	margin-top: 3em;
+}
+
+#content .button:hover {
+	background: rgba(0,177,237,.2);
+	color: #000;
+}
+
 			/* HALF ARTICLE */
 
 #content .article_h {
