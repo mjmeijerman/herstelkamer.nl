@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+<div id="body_vervolgpagina">
+    <div id="content">
+
+        <div class="article">
+            <h1>{{ content.title }}</h1>
+            {% if app.request.get('page') == 'aboutMe' %}
+                <img src="{{ asset('images/wiebenik.jpeg') }}">
+            {% endif %}
+            {{ content.content|raw }}
+
+            <br/><br/><br/>
+
+            <div class='reserveer_button'>
+                <a href='#' class='button'>Reserveren</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

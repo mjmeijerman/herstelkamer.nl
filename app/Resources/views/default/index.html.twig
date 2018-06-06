@@ -2,130 +2,90 @@
 
 {% block content %}
 
-<div id="welkom">
-	<div class="article">
-		<h1>Welkom bij Herstelkamer Nootdorp</h1>
-		<img src='images/foto.jpg'>
-	</div>
-</div>
+    <div id="welkom">
+        <div class="article">
+            <h1>Welkom bij Herstelkamer Nootdorp</h1>
+            <img src="{{ asset('images/foto.jpg') }}">
+        </div>
+    </div>
 
-<div id="content">			
-	<div class="article_h">
-		<a href='#'><h1>Wie ben ik? <span class='arrow'>&#8250;</span></h1></a>
-		
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-		Suspendisse in lectus luctus, sagittis orci eu.
-	</div>
-		
-	<div class="article_h">
-		<a href='#'><h1>Wat is het? <span class='arrow'>&#8250;</span></h1></a>
-		
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-		Suspendisse in lectus luctus, sagittis orci eu.
-	</div>
-	
-	<div class="article_h">
-		<a href='#'><h1>Wat kan ik voor u doen? <span class='arrow'>&#8250;</span></h1></a>
-		
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-		Suspendisse in lectus luctus, sagittis orci eu.
-	</div>
-	
-	<div class="article_h">
-		<a href='#'><h1>Inrichting <span class='arrow'>&#8250;</span></h1></a>
-		
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-		Suspendisse in lectus luctus, sagittis orci eu.
-	</div>
-	
-	<div class="article_h">
-		<a href='#'><h1>Wat kost het? <span class='arrow'>&#8250;</span></h1></a>
-		
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-	</div>
-	
-<!--	<div class="article_h">
-		<h1>Inrichting</h1>
-		
-		<img class='inrichting' src='images/inrichting.jpg'>
-	</div> -->
-	
-	<div class="article_h">
-		<a href='#'><h1>Overig <span class='arrow'>&#8250;</span></h1></a>
-		
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-		Suspendisse in lectus luctus, sagittis orci eu.
-	</div>
-	
-	<div class="article_h">
-		<a href='#'><h1>Heeft u nog vragen? <span class='arrow'>&#8250;</span></h1></a>
-		
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in lectus luctus, sagittis orci eu, tempor purus.
-	</div>
-		
-	<div class="article_h">
-		<a href='#'><h1>Reserveren? <span class='arrow'>&#8250;</span></h1></a>
-		
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in lectus luctus, sagittis orci eu, tempor purus.
-	</div>
-	
-	<div class="article_h">
-		<a href='#'><h1>Laatste recensies <span class='arrow'>&#8250;</span></h1></a>
-		
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-		Suspendisse in lectus luctus, sagittis orci eu.
-	</div>
-	
-	<div class="article_h">
-		<a href='#' class='button'>Reserveren</a>
-	</div>
-	
-	<div id="divider">
-	
-	</div>
-	
-	<div class="article_img">
-		<img class='inrichting' src='images/inrichting.jpg' />
-	</div>
-	
-	<div class="article_img">
-		<img class='inrichting' src='images/inrichting.jpg' />
-	</div>
-	
-	<div class="article_img">
-		<img class='inrichting' src='images/inrichting.jpg' />
-	</div>
-	
-	<div class="article_img">
-		<img class='inrichting' src='images/inrichting.jpg' />
-	</div>
-</div>
+    <div id="content">
+        <div class="article_h">
+            <a href={{ path('infoPage', { 'page': 'aboutMe' }) }}><h1>Wie ben ik? <span class='arrow'>&#8250;</span></h1></a>
+            {{ abstracts.aboutMe|raw }}
+        </div>
 
-<div id="footer">
-	<div id='footer_container'>
-	
-		<div class='footer_content'>
-			<a href='#'>Contact</a><br />
-			<span class='kvk'>KvK nr: 00000000</span>
-			<span class='kvk'>IBAN: NL00 INGB 0000000000</span>
-		</div>
-		
-		<div class='footer_content'>
-			<div class='midden'>
-				<a href='#'>Raad van Advies</a><br />
-				<a href='#'>Algemene Voorwaarden</a>
-			</div>
-		</div>
-		
-		<div class='footer_content'>
-			<div class='rechts'>
-				<a href='#'>Privacy en cookies</a><br />
-				<a href='#'>Proclaimer</a>
-			</div>
-		</div>
-		
-	</div>
-</div>
+        <div class="article_h">
+            <a href={{ path('infoPage', { 'page': 'whatItIs' }) }}><h1>Wat is het? <span class='arrow'>&#8250;</span></h1></a>
 
+            {{ abstracts.whatItIs|raw }}
+        </div>
+
+        <div class="article_h">
+            <a href={{ path('infoPage', { 'page': 'whatIDoForYou' }) }}><h1>Wat kan ik voor u doen? <span class='arrow'>&#8250;</span></h1></a>
+
+            {{ abstracts.whatIDoForYou|raw }}
+        </div>
+
+        <div class="article_h">
+            <a href={{ path('infoPage', { 'page': 'facilities' }) }}><h1>Inrichting <span class='arrow'>&#8250;</span></h1></a>
+
+            {{ abstracts.facilities|raw }}
+        </div>
+
+        <div class="article_h">
+            <a href={{ path('infoPage', { 'page': 'whatItCosts' }) }}><h1>Wat kost het? <span class='arrow'>&#8250;</span></h1></a>
+
+            {{ abstracts.whatItCosts|raw }}
+        </div>
+
+        <div class="article_h">
+            <a href={{ path('infoPage', { 'page': 'other' }) }}><h1>Tenslotte <span class='arrow'>&#8250;</span></h1></a>
+
+            {{ abstracts.other|raw }}
+        </div>
+
+        <div class="article_h">
+            <a href={{ path('infoPage', { 'page': 'questions' }) }}><h1>Heeft u nog vragen? <span class='arrow'>&#8250;</span></h1></a>
+
+            {{ abstracts.questions|raw }}
+        </div>
+
+        <div class="article_h">
+            <a href={{ path('infoPage', { 'page': 'book' }) }}><h1>Reserveren? <span class='arrow'>&#8250;</span></h1></a>
+
+            {{ abstracts.book|raw }}
+        </div>
+
+        <div class="article_h">
+            {#<a href={{ path('infoPage', { 'page': 'reviews' }) }}><h1>Laatste recensies <span class='arrow'>&#8250;</span></h1></a>#}
+
+            {#{{ abstracts.reviews|raw }}#}
+        </div>
+
+        <div class="article_h">
+            <a href='#' class='button'>Reserveren</a>
+        </div>
+
+        <div id="divider">
+
+        </div>
+
+        {#<div class="article_img">#}
+            {#<img class='inrichting' src='images/inrichting.jpg'/>#}
+        {#</div>#}
+
+        {#<div class="article_img">#}
+            {#<img class='inrichting' src='images/inrichting.jpg'/>#}
+        {#</div>#}
+
+        {#<div class="article_img">#}
+            {#<img class='inrichting' src='images/inrichting.jpg'/>#}
+        {#</div>#}
+
+        {#<div class="article_img">#}
+            {#<img class='inrichting' src='images/inrichting.jpg'/>#}
+        {#</div>#}
+    </div>
 {% endblock %}
 
