@@ -12,7 +12,7 @@
 <body>
 <center>
     <div class="container">
-        <div id="header"><a href="/"><img src="{{ asset('images/logo_color.png') }}"/></a></div>
+        <div id="header"><a href="{{ path('index') }}"><img src="{{ asset('images/logo_color.png') }}"/></a></div>
 
         {% block content %}{% endblock %}
 
@@ -20,22 +20,22 @@
             <div id='footer_container'>
 
                 <div class='footer_content'>
-                    <a href='#'>Contact</a><br/>
+                    <a href={{ path('infoPage', { 'page': 'contact' }) }}>Contact</a><br/>
                     <span class='kvk'>KvK nr: 00000000</span>
                     <span class='kvk'>IBAN: NL00 INGB 0000000000</span>
                 </div>
 
                 <div class='footer_content'>
                     <div class='midden'>
-                        <a href='#'>Raad van Advies</a><br/>
+                        <a href={{ path('infoPage', { 'page': 'boardOfAdvice' }) }}>Raad van Advies</a><br/>
                         <a href='#'>Algemene Voorwaarden</a>
                     </div>
                 </div>
 
                 <div class='footer_content'>
                     <div class='rechts'>
-                        <a href='#'>Privacy en cookies</a><br/>
-                        <a href='#'>Proclaimer</a>
+                        <a href={{ path('infoPage', { 'page': 'privacy' }) }}>Privacy en cookies</a><br/>
+                        <a href={{ path('infoPage', { 'page': 'proclaimer' }) }}>Proclaimer</a>
                     </div>
                 </div>
 

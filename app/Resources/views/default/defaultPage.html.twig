@@ -5,21 +5,11 @@
     <div id="content">
 
         <div class="article">
-            <h1>Wie ben ik?</h1>
-            <img src='images/wiebenik.jpeg'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum imperdiet condimentum. Phasellus
-            placerat ipsum sed leo laoreet, ac fringilla dolor bibendum. Nulla facilisi. Sed eget tortor neque. Fusce
-            fringilla condimentum ipsum vel dignissim. Nullam metus dolor, vulputate ac nunc eu, porttitor tristique
-            felis. Etiam porta rutrum enim id auctor.
-            <br/><br/>
-            In libero dui, semper vel aliquet et, tincidunt vitae sem. Class aptent taciti sociosqu ad litora torquent
-            per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Donec id dui augue. Nam euismod viverra sodales. Curabitur sed ultricies lacus.
-            Quisque imperdiet non nunc vel porta. Vestibulum eu elit in turpis efficitur aliquet. Quisque ac quam leo.
-            Integer facilisis vehicula leo, sit amet posuere ligula efficitur nec. Ut sit amet mi ut purus interdum
-            ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-            Pellentesque sagittis sodales lectus rhoncus viverra. Nulla ac sapien ultrices, lobortis nisl vitae,
-            vulputate turpis.
+            <h1>{{ content.title }}</h1>
+            {% if app.request.get('page') == 'aboutMe' %}
+                <img src="{{ asset('images/wiebenik.jpeg') }}">
+            {% endif %}
+            {{ content.content|raw }}
 
             <br/><br/><br/>
 
@@ -28,9 +18,5 @@
             </div>
         </div>
     </div>
-
-
 </div>
-
-
-</html>
+{% endblock %}
