@@ -3,3 +3,13 @@
 
 [vagrant-in-box]
 localhost
+
+[webserver:children]
+webserver-production
+webserver-test
+
+[webserver-production]
+herstelkamer-production ansible_ssh_host=herstelkamer.nl
+
+[webserver-test]
+herstelkamer-test ansible_ssh_host=herstelkamer.nl
