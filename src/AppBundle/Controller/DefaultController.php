@@ -74,7 +74,7 @@ OET;
 OET;
 
         $book = <<<OET
-<p>Reserveren is op basis van beschikbaarheid van de kamer (link). Uw reservering is voor een vaste periode.</p>
+<p>Reserveren is op basis van beschikbaarheid van de kamer. Uw reservering is voor een vaste periode.</p>
 OET;
 
         return [
