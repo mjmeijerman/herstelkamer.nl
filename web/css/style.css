@@ -12,11 +12,8 @@ body {
 	font-family: OpenSans, Calibri, sans-serif;
 	font-size: 1em;
 	color: #000;
-	background: #FCFCFC;
-}
-
-#body_vervolgpagina {
 	background: #F6F9F9;
+	position: relative;
 }
 
 a:link, a:visited {
@@ -40,7 +37,7 @@ a:hover, a:active {
 
 #header {
 	width: 100%;
-	background: none;
+	background: #FCFCFC;
 }
 
 #header img {
@@ -116,6 +113,7 @@ a:hover, a:active {
 #content {
 	width: 85%;
 	max-width: 1500px;
+	padding-bottom: 5em;
 }
 
 #content .article {
@@ -139,6 +137,27 @@ a:hover, a:active {
 
 #content .article .reserveer_button {
 	text-align: right;
+	margin-bottom: 3em;
+}
+
+#content .button {
+	font-family: OpenSans, Calibri, sans-serif;
+	font-size: 1.2em;
+	background: #00137F;
+	color: #FFF;
+	border-radius: 5px;
+	padding: .3em 1.1em;
+	margin-top: 3em;
+}
+
+#content .button:hover {
+	background: rgba(0,177,237,.2);
+	color: #000;
+}
+
+#content .article .back_link {
+	text-align: left;
+	display: inline-block;
 }
 
 			/* HALF ARTICLE */
@@ -223,12 +242,19 @@ a:hover, a:active {
 
 /* FOOTER */
 
+#fill_space {
+	margin-bottom: 3em;
+}
+
 #footer {
-	background: rgba(0,177,237,.2);
+	background: #CAEDF9;
 	width: 100%;
 	color: #000;
 	padding-top: 2em;
 	padding-bottom: 2em;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 
 #footer a:link, #footer a:visited {
