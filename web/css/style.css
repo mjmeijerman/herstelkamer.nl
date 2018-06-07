@@ -12,12 +12,8 @@ body {
 	font-family: OpenSans, Calibri, sans-serif;
 	font-size: 1em;
 	color: #000;
-	background: #FCFCFC;
-	position: relative;
-}
-
-#body_vervolgpagina {
 	background: #F6F9F9;
+	position: relative;
 }
 
 a:link, a:visited {
@@ -41,7 +37,7 @@ a:hover, a:active {
 
 #header {
 	width: 100%;
-	background: none;
+	background: #FCFCFC;
 }
 
 #header img {
