@@ -360,97 +360,96 @@ OET;
 <p>Herstelkamer Nootdorp hanteert onderstaande algemene voorwaarden. 
 <br>Deze zijn van kracht vanaf het moment van reservering tot en met het verblijf in Herstelkamer Nootdorp.<p>
  
-<p><b>1. Algemeen </b>
+<p><b>1. Algemeen</b>
 <ol>
-<li>Algemene Voorwaarden zijn van toepassing op alle overeenkomsten tot gebruik van Herstelkamer Nootdorp, Hof van Koningsveld 39, Nootdorp. </li>
-<li>Met het aangaan van een huurovereenkomst worden deze Algemene Voorwaarden van kracht. </li>
-<li>Deze Algemene Voorwaarden zijn opgenomen op de website https://www.herstelkamer.nl en worden met de reserveringsbevestiging aan gebruikers verzonden. </li>
-<li>De eigenaar kan de gebruiker bij aankomst vragen om een identiteitsbewijs te tonen. Gebruikers dienen een vaste woon- of verblijfplaats te hebben. </li>
-<li>De eigenaar is niet aansprakelijk voor schade, verlies of diefstal van eigendommen van de gebruikers. Bij geschillen hierover zijn alle (juridische) kosten voor rekening van de gebruikers. </li>
-<li>Herstelkamer Nootdorp is niet aansprakelijk voor de gevolgen van handelingen verricht door vanwege gebruiker ingehuurde zorg- of dienstverleners. </li>
-<li>Alle risico's met betrekking tot een verblijf in Herstelkamer Nootdorp zijn voor rekening van de gebruiker. </li>
+<li>Algemene Voorwaarden zijn van toepassing op alle overeenkomsten tot gebruik van Herstelkamer Nootdorp, Hof van Koningsveld 39, Nootdorp.</li>
+<li>Met het aangaan van een huurovereenkomst worden deze Algemene Voorwaarden van kracht.</li>
+<li>Deze Algemene Voorwaarden zijn opgenomen op de website https://www.herstelkamer.nl en worden met de reserveringsbevestiging aan gebruikers verzonden.</li>
+<li>De eigenaar kan de gebruiker bij aankomst vragen om een identiteitsbewijs te tonen. Gebruikers dienen een vaste woon- of verblijfplaats te hebben.</li>
+<li>De eigenaar is niet aansprakelijk voor schade, verlies of diefstal van eigendommen van de gebruikers. Bij geschillen hierover zijn alle (juridische) kosten voor rekening van de gebruikers.</li>
+<li>Herstelkamer Nootdorp is niet aansprakelijk voor de gevolgen van handelingen verricht door vanwege gebruiker ingehuurde zorg- of dienstverleners.</li>
+<li>Alle risico's met betrekking tot een verblijf in Herstelkamer Nootdorp zijn voor rekening van de gebruiker.</li>
 <li>Beschadigingen en vermissingen van roerende en onroerende goederen van de eigenaar dienen door de gebruiker onmiddellijk te worden gemeld en vergoed aan de eigenaar. </li>
-<li>Gebruikers dienen instructies van de eigenaar met betrekking tot de huur en het gebruik van de Herstelkamer op te volgen. </li>
-<li>De eigenaar kan gebruikers, bij overtreding van deze Algemene Voorwaarden en bij ongepast gedrag, met onmiddellijke ingang de toegang tot Herstelkamer Nootdorp ontzeggen en/of weigeren, zonder restitutie van verblijfskosten. </li>
-<li>De administratie van de eigenaar is in beginsel bepalend bij onderling meningsverschil tenzij de gebruikers het tegendeel kunnen bewijzen. </li>
-<li>Gebruikers van Herstelkamer Nootdorp dienen zich te houden aan het onderstaande Huishoudelijk Reglement. </li>
-<li>Marga Meijerman-Schoots is eigenaar en beheerder van Herstelkamer Nootdorp. De eigenaar kan zich laten vervangen door Bert Meijerman. Vervanging door een andere persoon zal in overleg met gebruiker plaatsvinden.</li> 
+<li>Gebruikers dienen instructies van de eigenaar met betrekking tot de huur en het gebruik van de Herstelkamer op te volgen.</li>
+<li>De eigenaar kan gebruikers, bij overtreding van deze Algemene Voorwaarden en bij ongepast gedrag, met onmiddellijke ingang de toegang tot Herstelkamer Nootdorp ontzeggen en/of weigeren, zonder restitutie van verblijfskosten.</li>
+<li>De administratie van de eigenaar is in beginsel bepalend bij onderling meningsverschil tenzij de gebruikers het tegendeel kunnen bewijzen.</li>
+<li>Gebruikers van Herstelkamer Nootdorp dienen zich te houden aan het onderstaande Huishoudelijk Reglement.</li>
+<li>Marga Meijerman-Schoots is eigenaar en beheerder van Herstelkamer Nootdorp. De eigenaar kan zich laten vervangen door Bert Meijerman. Vervanging door een andere persoon zal in overleg met gebruiker plaatsvinden.</li>
 </ol></p>
 
-<p><b>2. Reservering en bevestiging </b>
+<p><b>2. Reservering en bevestiging</b>
 <ol>
-<li>Het minimale verblijf in Herstelkamer Nootdorp is 4 dagen (3 nachten). Het maximale verblijf is 10 dagen (9 nachten). </li>
-<li>Voor het reserveren van een verblijf in De Herstelkamer worden geen extra reserveringskosten in rekening gebracht. </li>
-<li>Na ontvangst van uw reserveringsverzoek ontvangt u van Herstelkamer Nootdorp een schriftelijke bevestiging (mits plaats beschikbaar). </li>
-<li>De huurovereenkomst wordt schriftelijk aangegaan. Na ontvangst van uw aanbetaling is de reservering definitief. </li>
-<li>Een reserveringsverzoek kan worden afgewezen zonder opgaaf van redenen.</li> 
-<li>In onze reserveringsbevestiging wordt verwezen naar deze Algemene Voorwaarden. Door te reserveren bevestigt u dat u kennis heeft genomen van deze Algemene Voorwaarden.</li> 
+<li>Het minimale verblijf in Herstelkamer Nootdorp is 4 dagen (3 nachten). Het maximale verblijf is 10 dagen (9 nachten).</li>
+<li>Voor het reserveren van een verblijf in De Herstelkamer worden geen extra reserveringskosten in rekening gebracht.</li>
+<li>Na ontvangst van uw reserveringsverzoek ontvangt u van Herstelkamer Nootdorp een schriftelijke bevestiging (mits plaats beschikbaar).</li>
+<li>De huurovereenkomst wordt schriftelijk aangegaan. Na ontvangst van uw aanbetaling is de reservering definitief.</li>
+<li>Een reserveringsverzoek kan worden afgewezen zonder opgaaf van redenen.</li>
+<li>In onze reserveringsbevestiging wordt verwezen naar deze Algemene Voorwaarden. Door te reserveren bevestigt u dat u kennis heeft genomen van deze Algemene Voorwaarden.</li>
 </ol></p>
 
-<p><b>3. Betaling </b>
+<p><b>3. Betaling</b>
 <ol>
-<li>Bij reservering dient een aanbetaling van 50% van de totale huursom te worden voldaan. Het restant dient te worden betaald op de laatste dag van het verblijf. U ontvangt een factuur met de eindafrekening. </li>
-<li>De dag van aankomst en dag van vertrek worden bij een herstelverblijf berekend als volledige verblijfsdagen </li>
-<li>Extra faciliteiten zoals het draaien van een was op verzoek en het gebruik van de minibar worden apart in rekening gebracht. Een tarievenlijst wordt u bij aankomst ter hand gesteld. </li>
-<li>Voor het gebruik van het seniorenalarm (optioneel) wordt een borgsom van € 50,- gevraagd. Na teruggave van het alarm in ongeschonden staat wordt deze borgsom verrekend met de eindafrekening. </li>
-<li>Het schoonmaken van ernstige vervuiling of het herstel van beschadigingen aan het interieur zullen separaat in rekening worden gebracht. </li>
-<li>De eigenaar kan in overleg met de gebruiker van deze voorwaarden afwijken. </li>
+<li>Bij reservering dient een aanbetaling van 50% van de totale huursom te worden voldaan. Het restant dient te worden betaald op de laatste dag van het verblijf. U ontvangt een factuur met de eindafrekening.</li>
+<li>De dag van aankomst en dag van vertrek worden bij een herstelverblijf berekend als volledige verblijfsdagen</li>
+<li>Extra faciliteiten zoals het draaien van een was op verzoek en het gebruik van de minibar worden apart in rekening gebracht. Een tarievenlijst wordt u bij aankomst ter hand gesteld. </li>
+<li>Voor het gebruik van het seniorenalarm (optioneel) wordt een borgsom van € 50,- gevraagd. Na teruggave van het alarm in ongeschonden staat wordt deze borgsom verrekend met de eindafrekening.</li>
+<li>Het schoonmaken van ernstige vervuiling of het herstel van beschadigingen aan het interieur zullen separaat in rekening worden gebracht.</li>
+<li>De eigenaar kan in overleg met de gebruiker van deze voorwaarden afwijken.</li>
 <li>De tarieven vindt u op onze website.</li>
 </ol>
  
 <p><b>4. Annulering en no show (niet komen zonder annulering)</b>
 <ol>
-<li>Indien u onverhoopt niet in staat bent om de aangegane huurovereenkomst na te komen, verzoeken wij u dit zo spoedig mogelijk bij ons te melden zodat wij de daardoor vrijgevallen datum alsnog aan derden kunnen aanbieden. </li>
+<li>Indien u onverhoopt niet in staat bent om de aangegane huurovereenkomst na te komen, verzoeken wij u dit zo spoedig mogelijk bij ons te melden zodat wij de daardoor vrijgevallen datum alsnog aan derden kunnen aanbieden.</li>
 <li>Bij annulering en no show betaalt de contractant een vergoeding aan de eigenaar. Deze vergoeding bestaat uit:
-
 <ol type="a">
-<li>Tot 1 week voor ingangsdatum is de annulering kosteloos. </li>
+<li>Tot 1 week voor ingangsdatum is de annulering kosteloos.</li>
 <li>Bij annulering binnen 1 week voor ingangsdatum is 50% van het bedrag als vergoeding verschuldigd. Een uitzondering op deze regel kan worden gemaakt indien er sprake is van overmacht. Dit ter beoordeling van de eigenaar.</li>
 </ol>
-</li> 
+</li>
 </ol>
 </p>
 
-<p><b>5. Sleutel </b>
+<p><b>5. Sleutel</b>
 <ol>
-<li>Als gebruiker ontvangt u een sleutel van Herstelkamer Nootdorp. Deze mag niet worden doorgegeven aan derden. De sleutel levert u weer in bij vertrek. Als gebruiker bent u zelf verantwoordelijk voor het correct afsluiten van de toegangsdeur van Herstelkamer Nootdorp. </li>
-<li>Verlies van de sleutel is voor kosten van contractant (€ 100,-) en dient bij uitchecken cash door contractant te worden voldaan.</li> 
+<li>Als gebruiker ontvangt u een sleutel van Herstelkamer Nootdorp. Deze mag niet worden doorgegeven aan derden. De sleutel levert u weer in bij vertrek. Als gebruiker bent u zelf verantwoordelijk voor het correct afsluiten van de toegangsdeur van Herstelkamer Nootdorp.</li>
+<li>Verlies van de sleutel is voor kosten van contractant (€ 100,-) en dient bij uitchecken cash door contractant te worden voldaan.</li>
 </ol></p>
  
- <br><br>
-<h1>Huishoudelijk reglement </h1>
-<p><b>Aankomst en vertrek </b>
+<br><br>
+<h1>Huishoudelijk reglement</h1>
+<p><b>Aankomst en vertrek</b>
 <ol>
-<li>Op de dag van aankomst kunt u vanaf 11.00 uur uw verblijf gebruiken.</li> 
-<li>Op de dag van vertrek dient het verblijf om 15.00 uur vrij te zijn. </li>
-<li>Alleen in overleg kan van bovengenoemde tijden afgeweken worden.</li> 
+<li>Op de dag van aankomst kunt u vanaf 11.00 uur uw verblijf gebruiken.</li>
+<li>Op de dag van vertrek dient het verblijf om 15.00 uur vrij te zijn.</li>
+<li>Alleen in overleg kan van bovengenoemde tijden afgeweken worden.</li>
 <li>Bij voortijdig vertrek vindt geen restitutie plaats.</li>
 </ol></p>
  
-<p><b>Maaltijden </b>
+<p><b>Maaltijden</b>
 <ol>
-<li>Het verblijf is op basis van volpension </li>
-<li>Het ontbijt wordt in overleg tussen 08.00 en 09.00 uur geserveerd. </li>
-<li>De lunch wordt in overleg tussen 12.30-14.00 uur geserveerd </li>
-<li>Het diner wordt in overleg tussen 17.00 en 18.00 uur geserveerd </li>
-<li>De samenstelling van de maaltijden is in beginsel de keuze van de eigenaar.</li>
- Er wordt rekening gehouden met een medisch voorgeschreven dieet. 
-Verder wordt, binnen de mogelijkheden, geprobeerd rekening te houden met de wensen van de gebruiker.
+<li>Het verblijf is op basis van volpension</li>
+<li>Het ontbijt wordt in overleg tussen 08.00 en 09.00 uur geserveerd.</li>
+<li>De lunch wordt in overleg tussen 12.30-14.00 uur geserveerd</li>
+<li>Het diner wordt in overleg tussen 17.00 en 18.00 uur geserveerd</li>
+<li>De samenstelling van de maaltijden is in beginsel de keuze van de eigenaar.
+Er wordt rekening gehouden met een medisch voorgeschreven dieet.
+Verder wordt, binnen de mogelijkheden, geprobeerd rekening te houden met de wensen van de gebruiker.</li>
 </ol></p>
 
-<p><b>Gebruik apparatuur </b>
+<p><b>Gebruik apparatuur</b>
 <ol>
 <li>Gebruik van de aanwezige apparatuur in de herstelkamer is voor eigen risico. De eigenaar is niet aansprakelijk voor eventuele nadelige gevolgen voor de gebruiker van het gebruik van de apparatuur.</li>
 <li>De apparatuur dient alleen te worden gebruikt voor het daarvoor bestemde doel. De eigenaar is niet aansprakelijk voor een onvoorzien technisch mankement aan de apparatuur waardoor gebruik (tijdelijk) niet mogelijk is. De gebruiker is aansprakelijk voor defecten of beschadigingen die het gevolg zijn van een verkeerd gebruik van de apparatuur.</li>
 </ol></p>
  
-<p><b>Uw verblijf </b>
+<p><b>Uw verblijf</b>
 <ol>
-<li>Geluidsoverlast, met name tussen 22.00 en 07.00 uur, dient te worden voorkomen.</li> 
-<li>Het meebrengen van huisdieren is niet toegestaan. </li>
-<li>Roken is niet toegestaan in Herstelkamer Nootdorp. </li>
-<li>Bezoekers zijn toegestaan maar mogen niet overnachten in Herstelkamer Nootdorp. In overleg kan een logeermogelijkheid worden geboden. </li>
-<li>Er kan een voertuig worden geparkeerd op de parkeerplaats op het eigen terrein voor Herstelkamer Nootdorp. Als deze parkeerplaats bezet is dient op een openbare parkeerplaats elders te worden geparkeerd.</li> 
+<li>Geluidsoverlast, met name tussen 22.00 en 07.00 uur, dient te worden voorkomen.</li>
+<li>Het meebrengen van huisdieren is niet toegestaan.</li>
+<li>Roken is niet toegestaan in Herstelkamer Nootdorp.</li>
+<li>Bezoekers zijn toegestaan maar mogen niet overnachten in Herstelkamer Nootdorp. In overleg kan een logeermogelijkheid worden geboden. </li>
+<li>Er kan een voertuig worden geparkeerd op de parkeerplaats op het eigen terrein voor Herstelkamer Nootdorp. Als deze parkeerplaats bezet is dient op een openbare parkeerplaats elders te worden geparkeerd.</li>
 </ol></p>
 OET;
 
