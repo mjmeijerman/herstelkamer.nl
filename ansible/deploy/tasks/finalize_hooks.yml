@@ -30,3 +30,23 @@
   command: setfacl -dR -m u:"www-data":rwX -m u:"{{ deploy_user }}":rwX var/cache
   args:
     chdir: "{{ deploy_helper.new_release_path }}"
+
+- name: Make var/logs writable
+  command: setfacl -R -m u:"www-data":rwX -m u:"{{ deploy_user }}":rwX var/logs
+  args:
+    chdir: "{{ deploy_helper.new_release_path }}"
+
+- name: Make var/logs writable
+  command: setfacl -dR -m u:"www-data":rwX -m u:"{{ deploy_user }}":rwX var/logs
+  args:
+    chdir: "{{ deploy_helper.new_release_path }}"
+
+- name: Make var/sessions writable
+  command: setfacl -R -m u:"www-data":rwX -m u:"{{ deploy_user }}":rwX var/sessions
+  args:
+    chdir: "{{ deploy_helper.new_release_path }}"
+
+- name: Make var/sessions writable
+  command: setfacl -dR -m u:"www-data":rwX -m u:"{{ deploy_user }}":rwX var/sessions
+  args:
+    chdir: "{{ deploy_helper.new_release_path }}"
