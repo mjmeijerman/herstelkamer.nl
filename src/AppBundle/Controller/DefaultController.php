@@ -286,7 +286,9 @@ HERSTELKAMER NOOTDORP is niet verantwoordelijk voor de wijze waarop deze website
 Lees hiervoor het privacy statement, indien aanwezig, van de website die u bezoekt.</p>
 
 <p><b>Cookieverklaring</b><br>
-HERSTELKAMER NOOTDORP maakt geen gebruik van cookies.</p>
+HERSTELKAMER NOOTDORP maakt gebruik van cookies en daarmee vergelijkbare technieken. 
+Cookies zijn kleine tekstbestanden die door een internetpagina op een pc, tablet of mobiele telefoon worden geplaatst. 
+Cookies zorgen er bijvoorbeeld voor dat onze website optimaal functioneert.</p>
 
 <p><b>Beveiliging</b><br>
 HERSTELKAMER NOOTDORP hecht veel waarde aan het beveiligen van persoonsgegevens. HERSTELKAMER NOOTDORP neemt verschillende technische en 
