@@ -12,5 +12,6 @@ parameters:
     mailer_port: ~
     mailer_encryption: ~
     mailer_auth_mode: ~
+    mailer_delivery_address: ~
 
     secret: ThisTokenIsNotSoSecretChangeIt
