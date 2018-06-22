@@ -12,6 +12,7 @@ class DefaultController extends BaseController
      */
     public function indexAction()
     {
+        $this->mailer()->send('test', 'markmeijerman@hotmail.com', 'mails/booking_to_applicant.html.twig');
         $abstracts = $this->getAbstractsFromDatabase();
 
         return $this->render('default/index.html.twig', ['abstracts' => $abstracts]);
