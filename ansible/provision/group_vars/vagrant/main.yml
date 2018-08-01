@@ -7,7 +7,7 @@ nginx_group: "vagrant"
 php7_ini_directives_cli:
   allow_url_fopen: yes
 
-php7_version: 7.0
+php7_version: 7.2
 php7_enable_fpm: yes
 
 php7_ini_directives_default:
@@ -83,10 +83,8 @@ mysql_innodb_buffer_pool_size: 592M
 mysql_databases:
   - herstelkamer
 
-mysql_users:
-  - {
-    name:     herstelkamer,
-    password: herstelkamer,
-    priv:     "herstelkamer.*:ALL",
+mariadb_users:
+  - name:     'herstelkamer'
+    password: 'herstelkamer'
+    priv:     herstelkamer.*:ALL
     host:     "%"
-  }
