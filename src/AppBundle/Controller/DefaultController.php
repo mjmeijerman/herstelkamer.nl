@@ -5,7 +5,7 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-class DefaultController extends BaseController
+final class DefaultController extends BaseController
 {
     /**
      * @Route("/", name="index")

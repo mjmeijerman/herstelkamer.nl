@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <h1>Aanvraag reservering</h1>
+    {{ form_start(form) }}
+
+    {{ form_errors(form) }}
+    <div>
+        {{ form_errors(form.name) }}
+        {{ form_label(form.name) }}
+        {{ form_widget(form.name) }}
+    </div>
+
+    <div>
+        {{ form_errors(form.streetNumber) }}
+        {{ form_label(form.streetNumber) }}
+        {{ form_widget(form.streetNumber) }}
+    </div>
+
+    <div>
+        {{ form_label(form.zipCode) }}
+        {{ form_errors(form.zipCode) }}
+        {{ form_widget(form.zipCode) }}
+    </div>
+
+    <div>
+        {{ form_label(form.city) }}
+        {{ form_errors(form.city) }}
+        {{ form_widget(form.city) }}
+    </div>
+
+    <div>
+        {{ form_label(form.phoneNumber) }}
+        {{ form_errors(form.phoneNumber) }}
+        {{ form_widget(form.phoneNumber) }}
+    </div>
+
+    <div>
+        {{ form_label(form.emailAddress) }}
+        {{ form_errors(form.emailAddress) }}
+        {{ form_widget(form.emailAddress) }}
+    </div>
+
+    <div>
+        {{ form_label(form.bookingStart) }}
+        {{ form_errors(form.bookingStart) }}
+        {{ form_errors(form.bookingEnd) }}
+        {{ form_widget(form.bookingStart) }} - {{ form_widget(form.bookingEnd) }}
+    </div>
+
+    <div>
+        {{ form_label(form.remarks) }}
+        {{ form_errors(form.remarks) }}
+        {{ form_widget(form.remarks) }}
+    </div>
+
+    <div>
+        {{ form_errors(form.agreeTerms) }}
+        {{ form_widget(form.agreeTerms) }}
+        {{ form_label(form.agreeTerms) }}
+    </div>
+
+    <div>
+        {{ form_widget(form.save) }}
+    </div>
+
+    {{ form_end(form) }}
+
+    <br/><br/><br/>
+    <div class='back_link'>
+        <a href='../'>« Terug naar homepage</a>
+    </div>
+{% endblock %}
