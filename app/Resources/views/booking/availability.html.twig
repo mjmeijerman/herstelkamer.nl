@@ -34,9 +34,11 @@
             {% endif %}
             <td class="{{ class }}">{{ i }}</td>
             {% endfor %}
-            {% for i in j+1..7 %}
-                <td></td>
-            {% endfor %}
+            {% if j<7 %}
+                {% for i in j+1..7 %}
+                    <td></td>
+                {% endfor %}
+            {% endif %}
         </tr>
     </table>
     <br>
