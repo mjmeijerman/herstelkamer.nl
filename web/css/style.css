@@ -294,3 +294,15 @@ a:hover, a:active {
 	margin-top: .5em;
 	margin-bottom: .5em;
 }
+
+.availability_available {
+	background: #77dd77;
+}
+
+.availability_booked {
+	background: #ff6961;
+}
+
+.availability_under_option {
+	background: #ffb347;
+}

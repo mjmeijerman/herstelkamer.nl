@@ -50,6 +50,10 @@
       become: no
       command: "composer install chdir={{ project_root }}"
 
+    - name: Create database
+      become: no
+      command: "bin/console doctrine:database:create --no-interaction chdir={{ project_root }}"
+
     - name: Perform migrations
       become: no
       command: "bin/console doctrine:migrations:migrate --no-interaction chdir={{ project_root }}"

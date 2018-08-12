@@ -11,57 +11,78 @@
 
     <div id="content">
         <div class="article_h">
-            <a href={{ path('infoPage', { 'page': 'aboutMe' }) }}><h1>Wie ben ik? <span class='arrow'>&#8250;</span></h1></a>
+            <a href={{ path('infoPage', { 'page': 'aboutMe' }) }}><h1>Wie ben ik? <span class='arrow'>&#8250;</span>
+                </h1></a>
             {{ abstracts.aboutMe|raw }}
         </div>
 
         <div class="article_h">
-            <a href={{ path('infoPage', { 'page': 'whatItIs' }) }}><h1>Wat is het? <span class='arrow'>&#8250;</span></h1></a>
+            <a href={{ path('infoPage', { 'page': 'whatItIs' }) }}><h1>Wat is het? <span class='arrow'>&#8250;</span>
+                </h1></a>
 
             {{ abstracts.whatItIs|raw }}
         </div>
 
         <div class="article_h">
-            <a href={{ path('infoPage', { 'page': 'whatIDoForYou' }) }}><h1>Wat kan ik voor u doen? <span class='arrow'>&#8250;</span></h1></a>
+            <a href={{ path('infoPage', { 'page': 'whatIDoForYou' }) }}><h1>Wat kan ik voor u doen? <span class='arrow'>&#8250;</span>
+                </h1></a>
 
             {{ abstracts.whatIDoForYou|raw }}
         </div>
 
         <div class="article_h">
-            <a href={{ path('infoPage', { 'page': 'facilities' }) }}><h1>Inrichting <span class='arrow'>&#8250;</span></h1></a>
+            <a href={{ path('infoPage', { 'page': 'facilities' }) }}><h1>Inrichting <span class='arrow'>&#8250;</span>
+                </h1></a>
 
             {{ abstracts.facilities|raw }}
         </div>
 
         <div class="article_h">
-            <a href={{ path('infoPage', { 'page': 'whatItCosts' }) }}><h1>Wat kost het? <span class='arrow'>&#8250;</span></h1></a>
+            <a href={{ path('infoPage', { 'page': 'whatItCosts' }) }}><h1>Wat kost het? <span
+                            class='arrow'>&#8250;</span></h1></a>
 
             {{ abstracts.whatItCosts|raw }}
         </div>
 
         <div class="article_h">
-            <a href={{ path('infoPage', { 'page': 'other' }) }}><h1>Tenslotte <span class='arrow'>&#8250;</span></h1></a>
+            <a href={{ path('infoPage', { 'page': 'other' }) }}><h1>Tenslotte <span class='arrow'>&#8250;</span></h1>
+            </a>
 
             {{ abstracts.other|raw }}
         </div>
 
         <div class="article_h">
-            <a href={{ path('infoPage', { 'page': 'questions' }) }}><h1>Heeft u nog vragen? <span class='arrow'>&#8250;</span></h1></a>
+            <a href={{ path('infoPage', { 'page': 'questions' }) }}><h1>Heeft u nog vragen? <span
+                            class='arrow'>&#8250;</span></h1></a>
 
             {{ abstracts.questions|raw }}
         </div>
 
         <div class="article_h">
-            <a href={{ path('infoPage', { 'page': 'book' }) }}><h1>Reserveren? <span class='arrow'>&#8250;</span></h1></a>
+            <a href={{ path('infoPage', { 'page': 'book' }) }}><h1>Reserveren? <span class='arrow'>&#8250;</span></h1>
+            </a>
 
             {{ abstracts.book|raw }}
         </div>
+
+        <div class="article_h">
+            <a href={{ path('availability', { 'monthYear': "now"|date("Y-m") }) }}><h1>Beschikbaarheid <span class='arrow'>&#8250;</span></h1>
+            </a>
+
+            {{ abstracts.availability|raw }}
+        </div>
+
+        <div class="article_h"></div>
 
         <div class="article_h">
             {#<a href={{ path('infoPage', { 'page': 'reviews' }) }}><h1>Laatste recensies <span class='arrow'>&#8250;</span></h1></a>#}
 
             {#{{ abstracts.reviews|raw }}#}
         </div>
+
+        {#<div class="article_h">#}
+            {#<a href="{{ path('bookingForm') }}" class='button'>Reserveren</a>#}
+        {#</div>#}
 
         <div class="article_h">
             <a href="mailto:info@herstelkamer.nl" class='button'>Reserveren</a>
@@ -74,8 +95,8 @@
         <div class="article_img">
             <img class="inrichting" src="{{ asset('images/inrichting2.jpg') }}"/>
         </div>
-		
-		<div class="article_img">
+
+        <div class="article_img">
             <img class="inrichting" src="{{ asset('images/inrichting1.jpg') }}"/>
         </div>
 

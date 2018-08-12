@@ -3,10 +3,9 @@
 namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-class DefaultController extends Controller
+final class DefaultController extends BaseController
 {
     /**
      * @Route("/", name="index")
@@ -30,6 +29,31 @@ class DefaultController extends Controller
         }
 
         return $this->render('default/defaultPage.html.twig', ['content' => $content]);
+    }
+
+    /**
+     * @Route("/availability/{monthYear}", name="availability")
+     */
+    public function availabilityAction(string $monthYear)
+    {
+        $date                = \DateTimeImmutable::createFromFormat('Y-m', $monthYear);
+        $beginningOfTheMonth = $date->modify('first day of this month 00:00:00');
+        $endOfTheMonth       = $date->modify('last day of this month 23:59:59');
+
+        $dayOfTheWeekFirstDayOfTheMonth = $beginningOfTheMonth->format('N');
+        $numberOfDaysInTheMonth         = $endOfTheMonth->format('d');
+
+        $bookedDays = $this->bookedDayRepository()->findAllForMonth($beginningOfTheMonth, $endOfTheMonth);
+
+        return $this->render(
+            'booking/availability.html.twig',
+            [
+                'monthYear'                      => $this->monthToDutch($date->format('m')) . ' ' . $date->format('Y'),
+                'dayOfTheWeekFirstDayOfTheMonth' => $dayOfTheWeekFirstDayOfTheMonth,
+                'numberOfDaysInTheMonth'         => $numberOfDaysInTheMonth,
+                'bookedDays'                     => $bookedDays,
+            ]
+        );
     }
 
     /**
@@ -77,6 +101,10 @@ OET;
 <p>Reserveren is op basis van beschikbaarheid van de kamer. Uw reservering is voor een vaste periode.</p>
 OET;
 
+        $availability = <<<OET
+<p>Bekijk hier de beschikbaarheid van de kamer</p>
+OET;
+
         return [
             'aboutMe'       => $aboutMe,
             'whatIDoForYou' => $whatIDoForYou,
@@ -87,6 +115,7 @@ OET;
             'facilities'    => $facilities,
             'other'         => $other,
             'book'          => $book,
+            'availability'  => $availability,
         ];
     }
 
@@ -214,7 +243,7 @@ OET;
                 $content = <<<OET
 <p>Reserveren is op basis van beschikbaarheid van de kamer. Uw reservering is voor een vaste periode. 
 Uw reservering is pas definitief na ontvangst van uw aanbetaling. U ontvangt een schriftelijke reserveringsbevestiging.</p>
-<p>U kunt uw aanvraag indienen via <a href="mailto:info@herstelkamer.nl">info@herstelkamer.nl</a>.</p>
+<p>U kunt uw aanvraag indienen via het reserveringsformulier.</p>
 OET;
 
                 return [
@@ -463,5 +492,37 @@ OET;
         }
 
         return [];
+    }
+
+    private function monthToDutch(int $monthNumber): string
+    {
+        switch ($monthNumber) {
+            case 1:
+                return 'Januari';
+            case 2:
+                return 'Februari';
+            case 3:
+                return 'Maart';
+            case 4:
+                return 'April';
+            case 5:
+                return 'Mei';
+            case 6:
+                return 'Juni';
+            case 7:
+                return 'Juli';
+            case 8:
+                return 'Augustus';
+            case 9:
+                return 'September';
+            case 10:
+                return 'Oktober';
+            case 11:
+                return 'November';
+            case 12:
+                return 'December';
+        }
+
+        return 'Not a valid date';
     }
 }

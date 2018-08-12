@@ -1,1 +1,2 @@
 project_root: /var/www/test.herstelkamer.nl
+mailer_delivery_address: ['markmeijerman@gmail.com']
