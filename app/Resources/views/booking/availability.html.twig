@@ -17,19 +17,25 @@
             <th width="14%">Zondag</th>
         </tr>
         <tr align="center">
+            {% set j = 1 %}
             {% for i in 1..dayOfTheWeekFirstDayOfTheMonth-1 %}
                 <td></td>
             {% endfor %}
             {% for i in 1..numberOfDaysInTheMonth %}
+            {% set j = j + 1 %}
             {% if not (i + dayOfTheWeekFirstDayOfTheMonth - 2)%7 %}
         </tr>
         <tr align="center">
+            {% set j = 1 %}
             {% endif %}
             {% set class = 'availability_available' %}
             {% if bookedDays[i] is defined %}
                 {% set class = 'availability_' ~ bookedDays[i] %}
             {% endif %}
             <td class="{{ class }}">{{ i }}</td>
+            {% endfor %}
+            {% for i in j+1..7 %}
+                <td></td>
             {% endfor %}
         </tr>
     </table>
