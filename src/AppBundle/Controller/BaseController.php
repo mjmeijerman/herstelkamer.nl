@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\BookedDayRepository;
 use AppBundle\Service\MailerWrapper;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -29,5 +30,13 @@ abstract class BaseController extends Controller
         $em = $this->getDoctrine()->getManager();
         $em->remove($entity);
         $em->flush();
+    }
+
+    protected function bookedDayRepository(): BookedDayRepository
+    {
+        /** @var BookedDayRepository $repository */
+        $repository = $this->getDoctrine()->getRepository('AppBundle:BookedDay');
+
+        return $repository;
     }
 }
