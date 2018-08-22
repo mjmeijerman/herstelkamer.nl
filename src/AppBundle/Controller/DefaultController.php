@@ -162,7 +162,7 @@ OET;
             case 'whatItCosts':
                 $content = <<<OET
 <p>De Herstelkamer is een particulier bedrijf en ingeschreven bij de Kamer van Koophandel. U bent zelf verantwoordelijk voor betaling.</p> 
-<p>Een verblijf in de Herstelkamer kost € 175,- per nacht inclusief BTW. Hierbij zijn 3 maaltijden, koffie- en thee inbegrepen. 
+<p>Een verblijf in de Herstelkamer kost € 145,- per nacht inclusief BTW. Hierbij zijn 3 maaltijden, koffie- en thee inbegrepen. 
 Gebruik van de minibar en het op uw verzoek draaien van een was wordt apart in rekening gebracht.</p>
 <p>Bij reservering wordt een aanbetaling van 50% gevraagd. Het eindbedrag dient op de dag van vertrek te worden voldaan.</p>
 <p>Voor niet-inwoners van de gemeente Pijnacker-Nootdorp ben ik verplicht toeristenbelasting in rekening te brengen. Deze bedraagt € 2,12 per nacht.</p>
