@@ -113,7 +113,7 @@ a:hover, a:active {
 #content {
 	width: 85%;
 	max-width: 1500px;
-	padding-bottom: 10em;
+	padding-bottom: 1em;
 }
 
 #content .article {
@@ -239,19 +239,37 @@ a:hover, a:active {
 	width: 100%;
 }
 
+/* FORMULIER */
+
+#content .form_element {
+	width: 80em;
+}
+
+#content .form_element .form_element_label {
+	display: inline-block;
+	width: 20%;
+	text-align: left;
+	vertical-align: top;
+}
+
+#content .form_element .form_element_widget {
+	display: inline-block;
+	width: 25em;
+	text-align: left;
+}
+
 /* FOOTER */
 
 #fill_space {
-	margin-bottom: 7em;
+	height: 7em;
 }
 
 #footer {
+	display: block;
 	background: #CAEDF9;
 	width: 100%;
 	color: #000;
-	padding-top: 2em;
-	padding-bottom: 2em;
-	position: absolute;
+	margin-top: 1em;
 	bottom: 0;
 	left: 0;
 }
@@ -272,6 +290,8 @@ a:hover, a:active {
 #footer #footer_container {
 	width: 70%;
 	display: flex;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 #footer .footer_content {
@@ -412,4 +432,22 @@ input[type=date]:focus {
 .textarea:focus {
 	color: #000;
 	box-shadow: 0px 0px 10px #A5C7FE;
+}
+
+button {
+	margin-top: .5em;
+	font-family: OpenSans, Calibri, sans-serif;
+	font-size: 1em;
+	box-shadow: 0;
+	background: #00137F;
+	border: 0;
+	color: #FFF;
+	border-radius: 5px;
+	padding: .3em 1.1em;
+	cursor: pointer;
+}
+
+button:hover, button:focus {
+	background: rgba(0,177,237,.2);
+	color: #000;
 }
