@@ -60,7 +60,9 @@ final class BookingController extends BaseController
                 DateType::class,
                 ['label' => 'Gewenste periode:', 'widget' => 'single_text', 'attr' => ['placeholder' => 'dd-mm-jjjj']]
             )
-            ->add('remarks', TextareaType::class, ['label' => 'opmerkingen:', 'required' => false])
+            ->add('remarks', 
+				TextareaType::class, 
+				['label' => 'Opmerkingen:', 'required' => false, 'attr' => ['class' => 'textarea']])
             ->add(
                 'agreeTerms',
                 CheckboxType::class,
@@ -70,7 +72,10 @@ final class BookingController extends BaseController
                     'constraints' => new IsTrue(),
                 ]
             )
-            ->add('save', SubmitType::class, ['label' => 'Verstuur formulier'])
+            ->add(
+				'save', 
+				SubmitType::class, 
+				['label' => 'Verstuur formulier'])
             ->getForm();
 
         $form->handleRequest($request);
