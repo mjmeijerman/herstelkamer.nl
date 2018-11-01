@@ -9,22 +9,19 @@
                 <img src="{{ asset('images/wiebenik.jpeg') }}">
             {% endif %}
             {{ content.content|raw }}
-            <a href={{ path('infoPage', { 'page': 'book' }) }}>
-                {% if app.request.get('page') == 'conditions' %}
-                    <p><a href="{{ asset('documents/algemene_voorwaarden.pdf') }}" target="_blank">Download hier als
-                            PDF</a></p>
-                {% endif %}
-                <br/><br/><br/>
-                <div class='back_link'>
-                    <a href='../'>« Terug naar homepage</a>
-                </div>
-                {#<div class='reserveer_button'>#}
-                    {#<a href="{{ path('bookingForm') }}" class='button'>Reserveren</a>#}
-                {#</div>#}
+            {% if app.request.get('page') == 'conditions' %}
+                <p><a href="{{ asset('documents/algemene_voorwaarden.pdf') }}" target="_blank">Download hier als
+                        PDF</a></p>
+            {% endif %}
+            <br/><br/><br/>
+            <div class='back_link'>
+                <a href='../'>« Terug naar homepage</a>
+            </div>
 
-                <div class='reserveer_button'>
-                    <a href="mailto:info@herstelkamer.nl" class='button'>Reserveren</a>
-                </div>
+            <div class='reserveer_button'>
+                <a href="{{ path('bookingForm') }}" class='button'>Reserveren</a>
+            </div>
+
         </div>
     </div>
 
