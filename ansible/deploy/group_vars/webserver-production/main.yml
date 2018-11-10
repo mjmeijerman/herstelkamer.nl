@@ -1,2 +1,2 @@
-project_root: /var/www/herstelkamer.nl
+project_root: '{{ deploy_root }}/herstelkamer.nl'
 mailer_delivery_address: ~
