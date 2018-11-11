@@ -25,7 +25,7 @@ framework:
         # https://symfony.com/doc/current/reference/configuration/framework.html#handler-id
         cookie_lifetime: 0
         handler_id: session.handler.native_file
-        save_path:   "%kernel.root_dir%/sessions"
+        save_path:   "%kernel.project_dir%/var/sessions"
     fragments: ~
     http_method_override: true
     assets: ~
