@@ -138,7 +138,7 @@ Ik wil mensen graag het gevoel geven dat ze in een veilige, huiselijke omgeving 
 zich zorgen hoeven te maken over eten koken, boodschappen doen en schoonmaken. Ik hoop te bereiken dat mijn gasten 
 na een kort verblijf gesterkt en met nieuwe moed weer zelfstandig verder kunnen.</p>
 <p>Wilt u meer worden over wat mij motiveert?
-Lees dan <a href="https://www.telstar-online.nl/nieuws/actueel/91084/nieuw-in-nootdorp-de-herstelkamer"><b>hier</b></a> een artikel dat eerder in De Telstar verscheen.</p>
+Lees dan <a href="https://www.telstar-online.nl/nieuws/actueel/91084/nieuw-in-nootdorp-de-herstelkamer" target="_blank"><b>hier</b></a> een artikel dat eerder in De Telstar verscheen.</p>
 OET;
 
                 return [
