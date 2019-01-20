@@ -7,10 +7,8 @@
 
 - name: Install packages needed to use the deb.sury.org repository
   apt:
-    name: "{{ item }}"
-  with_items:
-    - apt-transport-https
-    - ca-certificates
+    name: ['apt-transport-https', 'ca-certificates']
+    state: present
 
 - name: Add the deb.sury.org trusted key
   apt_key:
@@ -114,16 +112,15 @@
 
 - name: Install PHP extensions
   apt:
-    name: "php-{{ item }}"
-  with_items: "{{ php7_extensions }}"
+    name: "{{ php7_extensions | map('prefix', 'php-') | list }}"
+    state: present
   notify:
     - Restart Apache
     - Restart PHP FPM
 
 - name: Install versioned PHP extensions
   apt:
-    name: "php{{ php7_version }}-{{ item }}"
-  with_items: "{{ php7_versioned_extensions }}"
+    name: "{{ php7_versioned_extensions | map('prefix', 'php' ~ php7_version ~ '-') | list }}"
   notify:
     - Restart Apache
     - Restart PHP FPM
