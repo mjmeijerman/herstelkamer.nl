@@ -63,8 +63,8 @@ final class DefaultController extends BaseController
     {
         $aboutMe = <<<OET
 <p>Mijn naam is Marga Schoots.</p> 
-<p>Ik heb 16 jaar voor een vakbond gewerkt. 
-In dat werk heb ik het belang geleerd van een persoonlijke benadering. </p>
+<p>Vanuit mijn eigen ervaring met en betrokkenheid bij het verouderingsproces van mijn hoogbejaarde ouders, 
+ontstond de wens om iets te betekenen voor ouderen en/of alleenstaanden die tijdelijk een steuntje in de rug kunnen gebruiken.</p>
 OET;
 
         $whatIDoForYou = <<<OET
@@ -76,7 +76,8 @@ OET;
 OET;
 
         $questions = <<<OET
-<p>Vragen kunt u stellen via <a href="mailto:info@herstelkamer.nl">info@herstelkamer.nl</a></p>
+<p>Vragen kunt u stellen via <a href="mailto:info@herstelkamer.nl">info@herstelkamer.nl</a><br/> 
+of door te bellen: 06-18434805</p>
 OET;
 
         $reviews = <<<OET
@@ -84,14 +85,22 @@ OET;
 OET;
 
         $whatItIs = <<<OET
-<p>De Herstelkamer is een overnachtings- en verblijfsgelegenheid die het midden houdt tussen 
-een Bed en Breakfast met extra faciliteiten en logeren bij een goede bekende.</p>
+<p>De Herstelkamer is een overnachtings- en verblijfsgelegenheid die het midden houdt tussen een zorghotel en logeren 
+bij een goede bekende. De beste omschrijving is zorgpension.</p>
 OET;
 
         $facilities = <<<OET
 <p>De Herstelkamer bestaat uit een slaapkamer met eigen badkamer. 
-De kamer is verbonden aan het woonhuis.</p>
+De kamer is verbonden aan het woonhuis maar heeft een eigen buitendeur. </p>
 OET;
+
+        $meals = <<<EOT
+<p>Koken is mijn passie. Ik kook met liefde, zorg en aandacht.<br />
+Met specifieke dieetwensen wordt rekening gehouden.</p>
+<p>
+Heeft u een lievelingsgerecht of een gerecht waar u een speciale herinnering bij heeft? Vertel het mij en ik maak het voor u.
+</p>
+EOT;
 
         $other = <<<OET
 <p>U kunt uw eigen bezoek ontvangen in de Herstelkamer. Zij kunnen daar niet overnachten.</p>
@@ -113,6 +122,7 @@ OET;
             'reviews'       => $reviews,
             'whatItIs'      => $whatItIs,
             'facilities'    => $facilities,
+            'meals'         => $meals,
             'other'         => $other,
             'book'          => $book,
             'availability'  => $availability,
@@ -130,13 +140,15 @@ OET;
             case 'aboutMe':
                 $content = <<<OET
 <p>Mijn naam is Marga Schoots.</p> 
-<p>Ik heb 16 jaar voor een vakbond gewerkt. 
-In dat werk heb ik het belang geleerd van een persoonlijke benadering. Mensen die zich gezien en gehoord voelen, 
-verzamelen eerder kracht om weer door te gaan, ze herstellen sneller van tegenslagen.</p>
-<p>Vanuit die ervaring en betrokkenheid ben ik begonnen met mijn Herstelkamer. 
-Ik wil mensen graag het gevoel geven dat ze in een veilige, huiselijke omgeving kunnen herstellen zonder dat ze 
-zich zorgen hoeven te maken over eten koken, boodschappen doen en schoonmaken. Ik hoop te bereiken dat mijn gasten 
-na een kort verblijf gesterkt en met nieuwe moed weer zelfstandig verder kunnen.</p>
+<p>Vanuit mijn eigen ervaring met en betrokkenheid bij het verouderingsproces van mijn hoogbejaarde ouders, 
+ontstond de wens om iets te betekenen voor ouderen en/of alleenstaanden die tijdelijk een steuntje in de rug kunnen gebruiken. 
+Dat kan bv. bij een herstelproces na een operatie of ziekte zijn. Maar het kan ook de behoefte zijn aan een paar dagen 
+zorgeloos verblijf als partner of mantelzorger even niet beschikbaar zijn. Of als u liever geen beroep wilt doen op familie, 
+vrienden of buren en u toch tijdelijk hulp nodig heeft.</p>
+<p>Vanuit die gedachte ben ik begonnen met mijn Herstelkamer. Ik wil mensen graag het gevoel geven dat ze in een veilige, 
+huiselijke omgeving kunnen herstellen of even bij kunnen komen zonder dat ze zich zorgen hoeven te maken over eten koken, 
+boodschappen doen en schoonmaken. Ik hoop te bereiken dat mijn gasten na een kort verblijf gesterkt 
+en met nieuwe moed weer zelfstandig verder kunnen.</p>
 <p>Wilt u meer worden over wat mij motiveert?
 Lees dan <a href="https://www.telstar-online.nl/nieuws/actueel/91084/nieuw-in-nootdorp-de-herstelkamer" target="_blank"><b>hier</b></a> een artikel dat eerder in De Eendracht verscheen.</p>
 OET;
@@ -146,14 +158,31 @@ OET;
                     'content' => $content,
                 ];
                 break;
+            case 'whatItIs':
+                $content = <<<OET
+<p>De Herstelkamer is een overnachtings- en verblijfsgelegenheid die het midden houdt tussen een zorghotel en logeren bij een goede bekende. De beste omschrijving is zorgpension.</p>
+<p>De ideale tussenoplossing voor wie geen zin heeft in het grootschalige en onpersoonlijke van een zorghotel maar ook 
+niet afhankelijk wil zijn van hulp van buren, vrienden of familie. Kernwoorden zijn kleinschalig, persoonlijk, huiselijk, 
+lekker eten, een luxe gevoel.</p>
+<p>Bij de inrichting van de ruimte is rekening gehouden met personen die herstellende zijn en weer op kracht moeten komen. 
+Er zijn voorzieningen die hier rekening mee houden: een verstelbaar ziekenhuisbed, beugels in de badkamer, de mogelijkheid om 
+zittend te douchen en een draagbaar alarm. De ruimte is niet toereikend voor personen met een permanente beperking, 
+voor personen die doorlopend medische zorg behoeven of voor mensen met een geestelijke aandoening (o.a. dementie).</p>
+<p>Het verblijf is op basis van volpension (ontbijt, lunch, diner). De maaltijden worden vers bereid en in overleg met u samengesteld.</p>
+<p>Het verblijf is gericht op herstel en de verhuurperiode is kort. De minimale verblijfsduur is 4 dagen, de maximale verblijfsduur is 10 dagen.</p>
+OET;
+
+                return [
+                    'title'   => 'Wat is het?',
+                    'content' => $content,
+                ];
+                break;
             case 'whatIDoForYou':
                 $content = <<<OET
 <p>Ik zorg voor u door dagelijkse beslommeringen van u over te nemen en door aandacht te hebben voor uw persoonlijk welzijn. 
-De zorg die ik geef is <b>niet-medisch en betreft geen lijfsgebonden zorg</b>. 
-Daarvoor kunt u de hulp van externe dienstverleners, bv. een thuiszorgorganisatie, inroepen. 
-Thuiszorg en bezoek van uw huisarts en andere hulpverleners kan in de Herstelkamer plaatsvinden. Zij krijgen via een sleutelkluis rechtstreeks toegang tot de Herstelkamer.</p>
-<p>In beginsel ben ik van 08.00 uur tot 18.00 uur voor u bereikbaar. 
-Buiten de genoemde tijden kunt u <b>alleen bij nood</b> via een alarmsysteem mijn hulp inroepen.</p>
+De zorg die ik geef is <b>niet-medisch en betreft geen lijfsgebonden zorg</b>. Die zorg kan wel worden geboden door het inschakelen 
+van externe dienstverleners, bv. een thuiszorgorganisatie of een fysiotherapeut. Bezoek van thuiszorgmedewerkers, 
+een huisarts en van andere medische hulpverleners kan in de Herstelkamer plaatsvinden. Zij krijgen rechtstreeks toegang tot de Herstelkamer.</p>
 OET;
 
                 return [
@@ -161,13 +190,47 @@ OET;
                     'content' => $content,
                 ];
                 break;
+            case 'meals':
+                $content = <<<OET
+<p>Koken is mijn passie. Ik kook met liefde, zorg en aandacht.</p>
+<p>Met specifieke dieetwensen wordt rekening gehouden.</p>
+<p>Heeft u een lievelingsgerecht of een gerecht waar u een speciale herinnering bij heeft? Vertel het mij en ik maak het voor u.</p>
+<p><b>Het ontbijt</b> wordt naar uw wens samengesteld. Het ontbijt wordt in de Herstelkamer of in de eetkeuken geserveerd.</p> 
+<p>Ik bak dagelijks bruin brood met biologisch meel van korenmolen Windlust in Nootdorp. Kaas en biologische eieren komen van kaasboerderij Van Leeuwen in Nootdorp. De boerenyoghurt, melk en karnemelk komen van coöperatie Delflandshof in Maasland.</p>
+<p><b>De lunch</b> bestaat o.a. uit een heerlijke soep met garnituur en/of met brood. Ik maak de soep bij voorkeur met verse seizoensgebonden producten. Laat u verrassen door een uitgebreid aanbod. Als u de voorkeur geeft aan alleen een broodmaaltijd als lunch, dan kan dat natuurlijk ook.</p>
+<p><b>Het diner</b> bestaat uit 2 of 3 gangen. Ik gebruik zoveel mogelijk seizoensproducten.
+</p>
+OET;
+
+                return [
+                    'title'   => 'De Maaltijden',
+                    'content' => $content,
+                ];
+                break;
+
+
+
+
+
+            case 'facilities':
+                $content = <<<OET
+<p>De Herstelkamer bestaat uit een slaapkamer met eigen badkamer. De kamer is verbonden aan het woonhuis maar heeft een eigen buitendeur. </p> 
+<p>De ruimte is gelijkvloers en zonder drempels. Kamer en badkamer zijn voorzien van vloerverwarming. Voor de warme zomerdagen is er een airco. Er zijn voorzieningen die een veilig gebruik van douche en toilet bevorderen. Als u dit wenst wordt een alarmknop ter beschikking gesteld waarmee u bij nood hulp kunt inroepen.</p>>
+<p>U slaapt in een verstelbaar ziekenhuisbed waar eventueel een papegaai aan vastgemaakt kan worden om het overeind komen te vergemakkelijken.</p>
+<p>Koffie- en theefaciliteiten zijn in de kamer aanwezig, evenals een mini-bar. De maaltijden kunt u naar wens gebruiken in de Herstelkamer of in de gezellige woonkeuken. Op aanvraag en tegen een geringe vergoeding kan ook voor uw partner een warme maaltijd worden verzorgd. De woonkeuken staat ook tot uw beschikking om overdag bv. een krantje te lezen, een praatje te maken of gewoon even lekker te zitten met een kopje koffie of thee.</p> 
+<p>Er is een TV op de kamer en u kunt gratis gebruik maken van Wifi.</p>
+</p>
+OET;
+
+                return [
+                    'title'   => 'Inrichting',
+                    'content' => $content,
+                ];
+                break;
             case 'whatItCosts':
                 $content = <<<OET
 <p>De Herstelkamer is een particulier bedrijf en ingeschreven bij de Kamer van Koophandel. U bent zelf verantwoordelijk voor betaling.</p> 
-<p>Een verblijf in Herstelkamer Nootdorp kost € 165,- per nacht exclusief BTW. Hierbij zijn 3 maaltijden, koffie- en thee inbegrepen. 
-Gebruik van de minibar en het op uw verzoek draaien van een was wordt apart in rekening gebracht.</p>
-<p><b>Tot 1 juli 2019 geldt een speciaal actietarief van € 145,- per nacht exclusief BTW.</b></p>
-<p>Bij reservering wordt een aanbetaling van 50% gevraagd. Het eindbedrag dient op de dag van vertrek te worden voldaan.</p>
+<p>Een verblijf in de Herstelkamer kost € 145,- per nacht exclusief BTW. Hierbij zijn 3 maaltijden, koffie- en thee inbegrepen. Bij reservering wordt een aanbetaling van 50% gevraagd. Het eindbedrag dient op de dag van vertrek te worden voldaan.</p>
 <p>Voor niet-inwoners van de gemeente Pijnacker-Nootdorp ben ik verplicht toeristenbelasting in rekening te brengen. Deze bedraagt € 2,12 per nacht.</p>
 OET;
 
@@ -176,13 +239,86 @@ OET;
                     'content' => $content,
                 ];
                 break;
+            case 'other':
+                $content = <<<OET
+<p>U kunt uw eigen bezoek ontvangen in de Herstelkamer. Zij kunnen daar niet overnachten. In overleg kan een logeermogelijkheid wel worden geboden.</p>
+<p>Ons hondje (een dwergteckel) is dol op bezoek en laat dat ook merken. Hij is vriendelijk en speels. <b>Als u allergisch bent voor honden of als u geen affiniteit met ze hebt raad ik u een verblijf in de herstelkamer af.</b><br />
+U mag geen eigen huisdieren meenemen naar de herstelkamer.</p>
+<p>Ik voer een strikt <b>niet-roken beleid</b> binnenshuis. Overtreding van deze regel leidt tot beëindiging van het verblijf.</p>
+
+OET;
+
+                return [
+                    'title'   => 'Tenslotte',
+                    'content' => $content,
+                ];
+                break;
             case 'questions':
                 $content = <<<OET
 <p>Vragen kunt u stellen via <a href="mailto:info@herstelkamer.nl">info@herstelkamer.nl</a></p>
+<p>of door te bellen: 06-18434805</p>
+<p>In overleg is het mogelijk de verblijfsruimtes van tevoren te bekijken, zodat u een goed beeld heeft van de voorzieningen.</p>
+
 OET;
 
                 return [
                     'title'   => 'Heeft u nog vragen?',
+                    'content' => $content,
+                ];
+                break;
+            case 'book':
+                $content = <<<OET
+<p>Reserveren is op basis van beschikbaarheid van de kamer. </p>
+<p>Uw reservering is voor een vaste periode. U kunt ook een <b>optie</b> nemen voor een bepaalde periode. 
+Uw reservering is pas definitief nadat de reservering schriftelijk is bevestigd. Door te reserveren gaat u akkoord met de 
+<a href="/page/conditions">Algemene Voorwaarden</a>.</p>
+<p>U kunt uw aanvraag indienen via <a href="/booking/form">het reserveringsformulier.</a></p>
+OET;
+
+                return [
+                    'title'   => 'Reserveren?',
+                    'content' => $content,
+                ];
+                break;
+            case 'contact':
+                $content = <<<OET
+<p>Herstelkamer Nootdorp<br>
+Hof van Koningsveld 39<br>
+2631 WJ Nootdorp<br>
+Mail: <a href="mailto:info@herstelkamer.nl">info@herstelkamer.nl</a><br>
+Telefoon: 06-18434805.<br>
+</p>
+OET;
+
+                return [
+                    'title'   => 'Contact',
+                    'content' => $content,
+                ];
+                break;
+            case 'proclaimer':
+                $content = <<<OET
+<p>Marga Meijerman is verantwoordelijk voor de inhoud van deze website en doet er alles aan deze juist en actueel te houden. 
+Als u vragen heeft of als u meent dat er informatie op staat die (niet meer) correct is, mail naar mij.</p>
+<p>Alle informatie die u verstrekt wordt vertrouwelijk door mij behandeld volgens mijn <a href="/page/privacy">privacyverklaring</a>. 
+Ik gebruik uw persoons- of adresgegevens uitsluitend voor het doel waarvoor u ze heeft verstrekt. 
+Uw persoonlijke gegevens worden niet zonder uw voorafgaande toestemming door mij ter beschikking van derden gesteld.</p>
+
+OET;
+
+                return [
+                    'title'   => 'Proclaimer',
+                    'content' => $content,
+                ];
+                break;
+            case 'accessibility':
+                $content = <<<OET
+<p>Als u een probleem ervaart met de website, laat het mij dan weten. Geef uw melding door via <a href="mailto:info@herstelkamer.nl">info@herstelkamer.nl</a></p>
+<p>Vermeld in ieder geval het probleem dat u ervaart en de link naar de pagina waar het probleem zich voordoet.</p>
+
+OET;
+
+                return [
+                    'title'   => 'Toegankelijkheid',
                     'content' => $content,
                 ];
                 break;
@@ -193,64 +329,6 @@ OET;
 
                 return [
                     'title'   => 'Reviews',
-                    'content' => $content,
-                ];
-                break;
-            case 'whatItIs':
-                $content = <<<OET
-<p>De Herstelkamer is een overnachtings- en verblijfsgelegenheid die het midden houdt tussen een Bed en Breakfast met extra faciliteiten en logeren bij een goede bekende.</p>
-<p>Bij de inrichting van de ruimte is rekening gehouden met personen die herstellende zijn na bv. een ziekenhuisopname. 
-Een verblijf in de Herstelkamer is niet bedoeld voor personen met een beperking of voor personen die doorlopend medische zorg behoeven. 
-De Herstelkamer is ook niet bedoeld voor mensen met een geestelijke aandoening (o.a. dementie).</p>
-<p>Het verblijf is op basis van volpension (ontbijt, lunch, diner). De maaltijden worden vers bereid en in overleg met u samengesteld.</p>
-<p>Het verblijf is gericht op herstel en de verhuurperiode is kort. De minimale verblijfsduur is 4 dagen, de maximale verblijfsduur is 10 dagen.</p>
-OET;
-
-                return [
-                    'title'   => 'Wat is het?',
-                    'content' => $content,
-                ];
-                break;
-            case 'facilities':
-                $content = <<<OET
-<p>De Herstelkamer bestaat uit een slaapkamer met eigen badkamer. De kamer is verbonden aan het woonhuis. 
-De ruimte is gelijkvloers, drempelloos en heeft een eigen uitgang naar buiten. Kamer en badkamer zijn voorzien van vloerverwarming. 
-Voor de warme zomerdagen is er een airco. Er zijn voorzieningen die een veilig gebruik van douche en toilet bevorderen. 
-Indien u dit wenst wordt een alarmknop ter beschikking gesteld waarmee u bij nood hulp kunt inroepen.</p>
-<p>U slaapt in een verstelbaar ziekenhuisbed.</p>
-<p>Koffie- en theefaciliteiten zijn in de kamer aanwezig, evenals een mini-bar.</p>
-<p>Er is een TV op de kamer en u kunt gratis gebruik maken van Wifi.</p>
-OET;
-
-                return [
-                    'title'   => 'Inrichting',
-                    'content' => $content,
-                ];
-                break;
-            case 'other':
-                $content = <<<OET
-<p>U kunt uw eigen bezoek ontvangen in de Herstelkamer. Zij kunnen daar niet overnachten. 
-In overleg kan een logeermogelijkheid wel worden geboden.</p>
-<p>Ons hondje (een dwergteckel) is dol op bezoek en laat dat ook merken. Hij is vriendelijk en speels. 
-<b>Als u allergisch bent voor honden of als u geen affiniteit met ze hebt raad ik u een verblijf in de herstelkamer af.</b></p>
-<p>U mag geen eigen huisdieren meenemen naar de herstelkamer.</p>
-<p>Ik voer een strikt <b>niet-roken beleid</b> binnenshuis. Overtreding van deze regel leidt tot beëindiging van het verblijf.</p>
-OET;
-
-                return [
-                    'title'   => 'Tenslotte',
-                    'content' => $content,
-                ];
-                break;
-            case 'book':
-                $content = <<<OET
-<p>Reserveren is op basis van beschikbaarheid van de kamer. Uw reservering is voor een vaste periode. 
-Uw reservering is pas definitief na ontvangst van uw aanbetaling. U ontvangt een schriftelijke reserveringsbevestiging.</p>
-<p>U kunt uw aanvraag indienen via het reserveringsformulier.</p>
-OET;
-
-                return [
-                    'title'   => 'Reserveren?',
                     'content' => $content,
                 ];
                 break;
@@ -344,36 +422,6 @@ OET;
 
                 return [
                     'title'   => 'Privacy en Cookies',
-                    'content' => $content,
-                ];
-                break;
-            case 'contact':
-                $content = <<<OET
-<p>Herstelkamer Nootdorp<br>
-Hof van Koningsveld 39<br>
-2631 WJ Nootdorp<br>
-Mail: <a href="mailto:info@herstelkamer.nl">info@herstelkamer.nl</a><br>
-Telefoon (bij voorkeur tussen 19.00 en 23.00 uur):06-18434805.<br>
-</p>
-OET;
-
-                return [
-                    'title'   => 'Contact',
-                    'content' => $content,
-                ];
-                break;
-            case 'proclaimer':
-                $content = <<<OET
-<p>Marga Meijerman is verantwoordelijk voor de inhoud van deze website en doet er alles aan deze juist en actueel te houden. 
-Als u vragen heeft of als u meent dat er informatie op staat die (niet meer) correct is, mail naar mij.</p>
-<p>Alle informatie die u verstrekt wordt vertrouwelijk door mij behandeld volgens mijn privacyverklaring. 
-Ik gebruik uw persoons- of adresgegevens uitsluitend voor het doel waarvoor u ze heeft verstrekt. 
-Uw persoonlijke gegevens worden niet door mij ter beschikking van derden gesteld.</p>
-
-OET;
-
-                return [
-                    'title'   => 'Proclaimer',
                     'content' => $content,
                 ];
                 break;

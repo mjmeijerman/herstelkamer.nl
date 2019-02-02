@@ -28,23 +28,23 @@ final class BookingController extends BaseController
         $booking = new Booking();
 
         $form = $this->createFormBuilder($booking)
-            ->add('name', TextType::class, ['label' => 'Naam:', 'attr' => ['placeholder' => 'Jan de Vries']])
+            ->add('name', TextType::class, ['label' => 'Naam:'])
             ->add(
                 'streetNumber',
                 TextType::class,
-                ['label' => 'Straat + nr.:', 'attr' => ['placeholder' => 'Straatnaam 12']]
+                ['label' => 'Straat + nr.:']
             )
-            ->add('zipCode', TextType::class, ['label' => 'Postcode:', 'attr' => ['placeholder' => '0000AA']])
-            ->add('city', TextType::class, ['label' => 'Plaats:', 'attr' => ['placeholder' => 'Plaatsnaam']])
+            ->add('zipCode', TextType::class, ['label' => 'Postcode:'])
+            ->add('city', TextType::class, ['label' => 'Plaats:'])
             ->add(
                 'phoneNumber',
                 TextType::class,
-                ['label' => 'Telefoonnummer:', 'attr' => ['placeholder' => '0612345678']]
+                ['label' => 'Telefoonnummer:']
             )
             ->add(
                 'emailAddress',
                 TextType::class,
-                ['label' => 'Email adres:', 'attr' => ['placeholder' => 'email@email.nl']]
+                ['label' => 'Email adres:']
             )
             ->add(
                 'bookingStart',
