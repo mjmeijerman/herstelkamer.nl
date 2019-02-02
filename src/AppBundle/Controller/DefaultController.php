@@ -170,6 +170,18 @@ zittend te douchen en een draagbaar alarm. De ruimte is niet toereikend voor per
 voor personen die doorlopend medische zorg behoeven of voor mensen met een geestelijke aandoening (o.a. dementie).</p>
 <p>Het verblijf is op basis van volpension (ontbijt, lunch, diner). De maaltijden worden vers bereid en in overleg met u samengesteld.</p>
 <p>Het verblijf is gericht op herstel en de verhuurperiode is kort. De minimale verblijfsduur is 4 dagen, de maximale verblijfsduur is 10 dagen.</p>
+<div class="article_img_vertical">
+    <img class="inrichting" src="/images/alarm.jpg"/>
+</div>
+<div class="article_img">
+    <img class="inrichting" src="/images/papegaai.jpg"/>
+</div>
+<div class="article_img_vertical">
+    <img class="inrichting" src="/images/douche.jpg"/>
+</div>
+<div class="article_img_vertical">
+    <img class="inrichting" src="/images/toilet.jpg"/>
+</div>
 OET;
 
                 return [
@@ -208,18 +220,23 @@ OET;
                 ];
                 break;
 
-
-
-
-
             case 'facilities':
                 $content = <<<OET
 <p>De Herstelkamer bestaat uit een slaapkamer met eigen badkamer. De kamer is verbonden aan het woonhuis maar heeft een eigen buitendeur. </p> 
-<p>De ruimte is gelijkvloers en zonder drempels. Kamer en badkamer zijn voorzien van vloerverwarming. Voor de warme zomerdagen is er een airco. Er zijn voorzieningen die een veilig gebruik van douche en toilet bevorderen. Als u dit wenst wordt een alarmknop ter beschikking gesteld waarmee u bij nood hulp kunt inroepen.</p>>
+<p>De ruimte is gelijkvloers en zonder drempels. Kamer en badkamer zijn voorzien van vloerverwarming. Voor de warme zomerdagen is er een airco. Er zijn voorzieningen die een veilig gebruik van douche en toilet bevorderen. Als u dit wenst wordt een alarmknop ter beschikking gesteld waarmee u bij nood hulp kunt inroepen.</p>
 <p>U slaapt in een verstelbaar ziekenhuisbed waar eventueel een papegaai aan vastgemaakt kan worden om het overeind komen te vergemakkelijken.</p>
 <p>Koffie- en theefaciliteiten zijn in de kamer aanwezig, evenals een mini-bar. De maaltijden kunt u naar wens gebruiken in de Herstelkamer of in de gezellige woonkeuken. Op aanvraag en tegen een geringe vergoeding kan ook voor uw partner een warme maaltijd worden verzorgd. De woonkeuken staat ook tot uw beschikking om overdag bv. een krantje te lezen, een praatje te maken of gewoon even lekker te zitten met een kopje koffie of thee.</p> 
 <p>Er is een TV op de kamer en u kunt gratis gebruik maken van Wifi.</p>
-</p>
+
+<div class="article_img">
+    <img class="inrichting" src="/images/minibar.jpg"/>
+</div>
+<div class="article_img">
+    <img class="inrichting" src="/images/wastafel.jpg"/>
+</div>
+<div class="article_img_vertical">
+    <img class="inrichting" src="/images/bloemetje.jpg"/>
+</div>
 OET;
 
                 return [
@@ -245,7 +262,12 @@ OET;
 <p>Ons hondje (een dwergteckel) is dol op bezoek en laat dat ook merken. Hij is vriendelijk en speels. <b>Als u allergisch bent voor honden of als u geen affiniteit met ze hebt raad ik u een verblijf in de herstelkamer af.</b><br />
 U mag geen eigen huisdieren meenemen naar de herstelkamer.</p>
 <p>Ik voer een strikt <b>niet-roken beleid</b> binnenshuis. Overtreding van deze regel leidt tot beëindiging van het verblijf.</p>
-
+<div class="article_img">
+    <img class="inrichting" src="/images/inrichting2.jpg"/>
+</div>
+<div class="article_img">
+    <img class="inrichting" src="/images/pablo.jpg"/>
+</div>
 OET;
 
                 return [
