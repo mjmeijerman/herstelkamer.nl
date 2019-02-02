@@ -229,13 +229,24 @@ a:hover, a:active {
 }
 
 #content .article_img {
-	width: 40%;
+	width: 38%;
+	display: inline-block;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+#content .article_img_vertical {
+	width: 16.9%;
 	display: inline-block;
 	margin-right: 1em;
 	margin-bottom: 1em;
 }
 
 #content .article_img .inrichting {
+	width: 100%;
+}
+
+#content .article_img_vertical .inrichting {
 	width: 100%;
 }
 
