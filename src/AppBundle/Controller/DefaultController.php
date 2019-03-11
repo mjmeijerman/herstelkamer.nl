@@ -86,7 +86,7 @@ OET;
 
         $whatItIs = <<<OET
 <p>De Herstelkamer is een overnachtings- en verblijfsgelegenheid die het midden houdt tussen een zorghotel en logeren 
-bij een goede bekende. De beste omschrijving is zorgpension.</p>
+bij een goede bekende. De beste omschrijving is zorgpension. Het verblijf is eerstelijnsverblijf laagcomplex.</p>
 OET;
 
         $facilities = <<<OET
@@ -143,7 +143,7 @@ OET;
 <p>Vanuit mijn eigen ervaring met en betrokkenheid bij het verouderingsproces van mijn hoogbejaarde ouders, 
 ontstond de wens om iets te betekenen voor ouderen en/of alleenstaanden die tijdelijk een steuntje in de rug kunnen gebruiken. 
 Dat kan bv. bij een herstelproces na een operatie of ziekte zijn. Maar het kan ook de behoefte zijn aan een paar dagen 
-zorgeloos verblijf als partner of mantelzorger even niet beschikbaar zijn. Of als u liever geen beroep wilt doen op familie, 
+zorgeloos verblijf als partner of mantelzorger even niet beschikbaar zijn. Of als u zelf mantelzorger bent (geweest) en zelf weer op krachten moet komen. Als u liever geen beroep wilt doen op familie, 
 vrienden of buren en u toch tijdelijk hulp nodig heeft.</p>
 <p>Vanuit die gedachte ben ik begonnen met mijn Herstelkamer. Ik wil mensen graag het gevoel geven dat ze in een veilige, 
 huiselijke omgeving kunnen herstellen of even bij kunnen komen zonder dat ze zich zorgen hoeven te maken over eten koken, 
@@ -160,7 +160,7 @@ OET;
                 break;
             case 'whatItIs':
                 $content = <<<OET
-<p>De Herstelkamer is een overnachtings- en verblijfsgelegenheid die het midden houdt tussen een zorghotel en logeren bij een goede bekende. De beste omschrijving is zorgpension.</p>
+<p>De Herstelkamer is een overnachtings- en verblijfsgelegenheid die het midden houdt tussen een zorghotel en logeren bij een goede bekende. De beste omschrijving is zorgpension. Het verblijf is eerstelijnsverblijf laagcomplex.</p>
 <p>De ideale tussenoplossing voor wie geen zin heeft in het grootschalige en onpersoonlijke van een zorghotel maar ook 
 niet afhankelijk wil zijn van hulp van buren, vrienden of familie. Kernwoorden zijn kleinschalig, persoonlijk, huiselijk, 
 lekker eten, een luxe gevoel.</p>
@@ -169,7 +169,7 @@ Er zijn voorzieningen die hier rekening mee houden: een verstelbaar ziekenhuisbe
 zittend te douchen en een draagbaar alarm. De ruimte is niet toereikend voor personen met een permanente beperking, 
 voor personen die doorlopend medische zorg behoeven of voor mensen met een geestelijke aandoening (o.a. dementie).</p>
 <p>Het verblijf is op basis van volpension (ontbijt, lunch, diner). De maaltijden worden vers bereid en in overleg met u samengesteld.</p>
-<p>Het verblijf is gericht op herstel en de verhuurperiode is kort. De minimale verblijfsduur is 4 dagen, de maximale verblijfsduur is 10 dagen.</p>
+<p>Het verblijf is gericht op herstel en de verhuurperiode is kort. De minimale verblijfsduur is 3 dagen, de maximale verblijfsduur is 14 dagen.</p>
 <div class="article_img_vertical">
     <img class="inrichting" src="/images/alarm.jpg"/>
 </div>
@@ -247,7 +247,7 @@ OET;
             case 'whatItCosts':
                 $content = <<<OET
 <p>De Herstelkamer is een particulier bedrijf en ingeschreven bij de Kamer van Koophandel. U bent zelf verantwoordelijk voor betaling.</p> 
-<p>Een verblijf in de Herstelkamer kost € 145,- per nacht exclusief BTW. Hierbij zijn 3 maaltijden, koffie- en thee inbegrepen. Bij reservering wordt een aanbetaling van 50% gevraagd. Het eindbedrag dient op de dag van vertrek te worden voldaan.</p>
+<p>Een verblijf in de Herstelkamer kost € 145,- per nacht inclusief BTW. Hierbij zijn 3 maaltijden, koffie- en thee inbegrepen. Bij reservering wordt een aanbetaling van 50% gevraagd. Het eindbedrag dient op de dag van vertrek te worden voldaan.</p>
 <p>Voor niet-inwoners van de gemeente Pijnacker-Nootdorp ben ik verplicht toeristenbelasting in rekening te brengen. Deze bedraagt € 2,12 per nacht.</p>
 OET;
 
