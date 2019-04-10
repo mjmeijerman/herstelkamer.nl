@@ -72,12 +72,12 @@
             {{ abstracts.book|raw }}
         </div>
 
-        {#<div class="article_h">#}
-            {#<a href={{ path('availability', { 'monthYear': "now"|date("Y-m") }) }}><h1>Beschikbaarheid <span class='arrow'>&#8250;</span></h1>#}
-            {#</a>#}
+        <div class="article_h">
+            <a href={{ path('availability', { 'monthYear': "now"|date("Y-m") }) }}><h1>Beschikbaarheid <span class='arrow'>&#8250;</span></h1>
+            </a>
 
-            {#{{ abstracts.availability|raw }}#}
-        {#</div>#}
+            {{ abstracts.availability|raw }}
+        </div>
 
         <div class="article_h"></div>
 
