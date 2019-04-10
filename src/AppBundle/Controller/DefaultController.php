@@ -106,8 +106,9 @@ EOT;
 <p>U kunt uw eigen bezoek ontvangen in de Herstelkamer. Zij kunnen daar niet overnachten.</p>
 OET;
 
+        $date = date('Y-m');
         $book = <<<OET
-<p>Reserveren is op basis van beschikbaarheid van de kamer. Uw reservering is voor een vaste periode.</p>
+<p>Reserveren is op basis van <a href="/availability/{$date}">beschikbaarheid</a> van de kamer. Uw reservering is voor een vaste periode.</p>
 OET;
 
         $availability = <<<OET
@@ -289,8 +290,9 @@ OET;
                 ];
                 break;
             case 'book':
+                $date = date('Y-m');
                 $content = <<<OET
-<p>Reserveren is op basis van beschikbaarheid van de kamer. </p>
+<p>Reserveren is op basis van <a href="/availability/{$date}">beschikbaarheid</a> van de kamer. </p>
 <p>Uw reservering is voor een vaste periode. U kunt ook een <b>optie</b> nemen voor een bepaalde periode. 
 Uw reservering is pas definitief nadat de reservering schriftelijk is bevestigd. Door te reserveren gaat u akkoord met de 
 <a href="/page/conditions">Algemene Voorwaarden</a>.</p>
