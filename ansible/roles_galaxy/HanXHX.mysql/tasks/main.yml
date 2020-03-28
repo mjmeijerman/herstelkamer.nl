@@ -10,47 +10,39 @@
   changed_when: false
 
 - name: INCLUDE | Install
-  include: install/main.yml
+  import_tasks: install/main.yml
 
-- name: TEMPLATE | Deploy configuration
+- name: TEMPLATE | Deploy config files
   template:
-    src: "{{ mariadb_config_template }}"
-    dest: /etc/mysql/my.cnf
+    src: "{{ item }}"
+    dest: "/{{ item | replace('.j2', '') }}"
+  loop:
+    - etc/mysql/my.cnf
+    - etc/mysql/conf.d/mysqldump.cnf.j2
+    - etc/mysql/mariadb.conf.d/10-extra.cnf.j2
+    - etc/mysql/mariadb.conf.d/50-client.cnf.j2
+    - etc/mysql/mariadb.conf.d/50-mysqld_safe.cnf.j2
+    - etc/mysql/mariadb.conf.d/50-server.cnf.j2
   register: config
-
-- name: TEMPLATE | Deploy extra configuration
-  template:
-    src: etc/mysql/conf.d/10-extra.cnf.j2
-    dest: /etc/mysql/conf.d/10-extra.cnf
-  register: extraconfig
 
 - name: SERVICE | Restart now (prevent bugs)
   service:
     name: mysql
     state: restarted
-  when: >
-    (config.changed or extraconfig.changed) and
+  when:
+    config.changed and
     not mariadb_galera_resetup
 
-- name: TEMPLATE Create .my.cnf for root
-  template:
-    src: root/my.cnf
-    dest: /root/.my.cnf
-    owner: root
-    group: root
-    mode: 0600
-    backup: yes
-
 - name: INCLUDE | Galera
-  include: galera/main.yml
-  when: mariadb_vendor == 'mariadb_galera'
+  import_tasks: galera/main.yml
+  when: mariadb_use_galera
 
 - name: INCLUDE | Replication
-  include: replication/main.yml
+  import_tasks: replication/main.yml
   when: mariadb_replication_master or mariadb_replication_slave
 
 - name: INCLUDE | Secure install
-  include: 'secure.yml'
+  import_tasks: 'secure.yml'
 
 - name: SERVICE | Ensure service is started
   service:
@@ -61,19 +53,14 @@
   mysql_db:
     name: "{{ item }}"
     state: present
-  with_items: "{{ mariadb_databases }}"
+  loop: "{{ mariadb_databases }}"
 
 - name: MYSQL_USER | Manages users...
   mysql_user:
     name: "{{ item.name }}"
     password: "{{ item.password }}"
     priv: "{{ item.priv }}"
-    host: "{{ item.host | default('localhost') }}"
+    host: "{{ item.host | default(omit) }}"
+    host_all: "{{ item.host_all | default(omit) }}"
     state: present
-  with_items: "{{ mariadb_users }}"
-
-- name: TEMPLATE | Deploy logrotate configuration
-  template:
-    src: "etc/logrotate.d/mysql-server.j2"
-    dest: "/etc/logrotate.d/mysql-server"
-  when: mariadb_manage_logrotate
+  loop: "{{ mariadb_users }}"

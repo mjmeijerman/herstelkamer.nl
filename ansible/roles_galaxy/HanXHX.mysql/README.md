@@ -5,11 +5,10 @@ MariaDB (MySQL) Ansible role for Debian
 
 Install and configure MariaDB (Galera Cluster). Manage replication (master/slave). Create users and databases.
 
-| OS              | Vendor                  | Origin    | Managed versions          |
-| --------------- | ----------------------- | --------- | ------------------------- |
-| Debian Stretch  | MariaDB                 | Debian    | 10.1                      |
-| Debian Stretch  | MariaDB                 | Upstream  | 10.1 / 10.2 / 10.3        |
-| Debian Stretch  | MariaDB Galera Cluster  | Upstream  | 10.1 / 10.2               |
+| OS              | Origin    | MariaDB versions          |
+| --------------- | --------- | ------------------------- |
+| Debian Buster   | Debian    | 10.3                      |
+| Debian Buster   | Upstream  | 10.3 / 10.4               |
 
 Notes
 -----
@@ -21,17 +20,14 @@ Notes
 Requirements
 ------------
 
-None.
+Ansible 2.8+
 
 Role Variables
 --------------
 
-- `mariadb_origin`: origin of the package ("default" or "upstream")
-- `mariadb_vendor`: "mariadb", "mariadb\_galera"
+- `mariadb_use_galera`: set true to configure and install Galera Cluster
 
 ### Configuration
-
-- `mariadb_root_password`: root password (should be protected with [vault](http://docs.ansible.com/playbooks_vault.html))
 
 If you need a feature you can't configure, you can use this list. These config will go to `/etc/mysql/conf.d/01-extra`.
 
@@ -47,20 +43,22 @@ Example:
 
 ```
 mariadb_users:
-  - name: 'kiki'
+  - name: 'lorem'
     password: '123'
-    priv: hihi.*:ALL
-    host: '%'
+    priv: lorem.*:ALL
+    host: 'localhost'
+  - name: 'ipsum'
+    password: '465'
+    priv: ipsum.*:ALL
+    host_all: yes
 ```
 
 Check "priv" syntax in [mysql\_user module documentation](http://docs.ansible.com/mysql_user_module.html)
 
 ### Packaging
 
-- `mariadb_version`: 10.0 / 10.1 / 10.2
+- `mariadb_version`: depends Debian version
 - `mariadb_repository`: MariaDB upstream APT repository (see: [MariaDB repositories tool](https://downloads.mariadb.org/mariadb/repositories))
-- `mariadb_percona_repository`: Percona upstream APT repository (see: [Percona APT doc](http://www.percona.com/doc/percona-server/5.5/installation/apt_repo.html))
-- `mariadb_use_percona_apt`: Force using Percona APT repository (useful when you want to use latest version of percona toolkits, xtrabackup... etc)
 
 Dependencies
 ------------
@@ -72,7 +70,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: HanXHX.mysql, mariadb_origin: 'upstream', mariadb_vendor: 'mariadb' }
+         - { role: HanXHX.mysql, mariadb_origin: 'upstream' }
 
 License
 -------
