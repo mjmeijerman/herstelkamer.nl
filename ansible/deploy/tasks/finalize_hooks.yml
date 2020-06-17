@@ -1,5 +1,5 @@
 - name: Run database migrations
-  command: "bin/console doctrine:migrations:migrate --no-interaction --env=prod chdir={{ deploy_helper.new_release_path }}"
+  command: "bin/console doctrine:migrations:migrate --no-interaction --allow-no-migration --env=prod chdir={{ deploy_helper.new_release_path }}"
 
 - name: make sure that all web writable folders exist
   file: path="{{ item.name }}" state=directory recurse=yes
