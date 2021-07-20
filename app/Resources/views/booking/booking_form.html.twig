@@ -5,11 +5,15 @@
 <div id="content">
 
     <h1>Aanvraag reservering</h1>
+    <p style="color:red">
+        De Herstelkamer is tot 15 augustus niet beschikbaar, voor informatie over de periode daarna
+        kunt u contact opnemen via <a href="mailto:info@herstelkamer.nl">info@herstelkamer.nl</a>
+    </p>
 
     {{ form_start(form) }}
 
     {{ form_errors(form) }}
-	
+
     <div class='form_element'>
 		<div class='form_element_label'>
 			{{ form_errors(form.name) }}
