@@ -36,7 +36,7 @@ final class DefaultController extends BaseController
      */
     public function availabilityAction(string $monthYear)
     {
-        $date                = \DateTimeImmutable::createFromFormat('Y-m', $monthYear);
+        $date                = \DateTimeImmutable::createFromFormat('Y-m-d H:i:s', $monthYear . '-01 00:00:00');
         $beginningOfTheMonth = $date->modify('first day of this month 00:00:00');
         $endOfTheMonth       = $date->modify('last day of this month 23:59:59');
 
