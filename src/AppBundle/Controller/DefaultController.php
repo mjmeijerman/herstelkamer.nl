@@ -141,8 +141,8 @@ OET;
             case 'aboutMe':
                 $content = <<<OET
 <p>Mijn naam is Marga Schoots.</p> 
-<p>Vanuit mijn eigen ervaring met en betrokkenheid bij het verouderingsproces van mijn hoogbejaarde ouders, 
-ontstond de wens om iets te betekenen voor ouderen en/of alleenstaanden die tijdelijk een steuntje in de rug kunnen gebruiken. 
+<p>Vanuit mijn eigen ervaring met en betrokkenheid bij de zorgbehoefte van mijn ouders, 
+ontstond de wens om iets te betekenen voor iedereen die tijdelijk een steuntje in de rug kan gebruiken na bijvoorbeeld een medische ingreep. 
 Dat kan bv. bij een herstelproces na een operatie of ziekte zijn. Maar het kan ook de behoefte zijn aan een paar dagen 
 zorgeloos verblijf als partner of mantelzorger even niet beschikbaar zijn. Of als u zelf mantelzorger bent (geweest) en zelf weer op krachten moet komen. Als u liever geen beroep wilt doen op familie, 
 vrienden of buren en u toch tijdelijk hulp nodig heeft.</p>
@@ -150,7 +150,7 @@ vrienden of buren en u toch tijdelijk hulp nodig heeft.</p>
 huiselijke omgeving kunnen herstellen of even bij kunnen komen zonder dat ze zich zorgen hoeven te maken over eten koken, 
 boodschappen doen en schoonmaken. Ik hoop te bereiken dat mijn gasten na een kort verblijf gesterkt 
 en met nieuwe moed weer zelfstandig verder kunnen.</p>
-<p>Wilt u meer worden over wat mij motiveert?
+<p>Wilt u meer weten over wat mij motiveert?
 Lees dan <a href="https://www.telstar-online.nl/nieuws/actueel/91084/nieuw-in-nootdorp-de-herstelkamer" target="_blank"><b>hier</b></a> een artikel dat eerder in De Eendracht verscheen.</p>
 OET;
 
@@ -166,11 +166,11 @@ OET;
 niet afhankelijk wil zijn van hulp van buren, vrienden of familie. Kernwoorden zijn kleinschalig, persoonlijk, huiselijk, 
 lekker eten, een luxe gevoel.</p>
 <p>Bij de inrichting van de ruimte is rekening gehouden met personen die herstellende zijn en weer op kracht moeten komen. 
-Er zijn voorzieningen die hier rekening mee houden: een verstelbaar ziekenhuisbed, beugels in de badkamer, de mogelijkheid om 
-zittend te douchen en een draagbaar alarm. De ruimte is niet toereikend voor personen met een permanente beperking, 
+Er zijn voorzieningen die hier rekening mee houden: een verstelbaar zorgbed, handgrepen in de badkamer, de mogelijkheid om 
+zittend te douchen en een draagbaar alarm. De ruimte is niet toereikend voor geschikt met een permanente beperking, 
 voor personen die doorlopend medische zorg behoeven of voor mensen met een geestelijke aandoening (o.a. dementie).</p>
 <p>Het verblijf is op basis van volpension (ontbijt, lunch, diner). De maaltijden worden vers bereid en in overleg met u samengesteld.</p>
-<p>Het verblijf is gericht op herstel en de verhuurperiode is kort. De minimale verblijfsduur is 3 dagen, de maximale verblijfsduur is 14 dagen.</p>
+<p>Het verblijf is gericht op herstel en de verhuurperiode is kort. De minimale verblijfsduur is 3 nachten, de maximale verblijfsduur is 7 nachten.</p>
 <div class="article_img_vertical">
     <img class="inrichting" src="/images/alarm.jpg"/>
 </div>
@@ -206,12 +206,12 @@ OET;
             case 'meals':
                 $content = <<<OET
 <p>Koken is mijn passie. Ik kook met liefde, zorg en aandacht.</p>
-<p>Met specifieke dieetwensen wordt rekening gehouden.</p>
+<p>Met specifieke dieetwensen houd ik rekening.</p>
 <p>Heeft u een lievelingsgerecht of een gerecht waar u een speciale herinnering bij heeft? Vertel het mij en ik maak het voor u.</p>
 <p><b>Het ontbijt</b> wordt naar uw wens samengesteld. Het ontbijt wordt in de Herstelkamer of in de eetkeuken geserveerd.</p> 
-<p>Ik bak dagelijks bruin brood met biologisch meel van korenmolen Windlust in Nootdorp. Kaas en biologische eieren komen van kaasboerderij Van Leeuwen in Nootdorp. De boerenyoghurt, melk en karnemelk komen van coöperatie Delflandshof in Maasland.</p>
-<p><b>De lunch</b> bestaat o.a. uit een heerlijke soep met garnituur en/of met brood. Ik maak de soep bij voorkeur met verse seizoensgebonden producten. Laat u verrassen door een uitgebreid aanbod. Als u de voorkeur geeft aan alleen een broodmaaltijd als lunch, dan kan dat natuurlijk ook.</p>
-<p><b>Het diner</b> bestaat uit 2 of 3 gangen. Ik gebruik zoveel mogelijk seizoensproducten.
+<p>Ik bak dagelijks brood van biologisch meel. Kaas en biologische eieren komen van kaasboerderij Van Leeuwen in Nootdorp. De boerenyoghurt, melk en karnemelk komen van coöperatie Delflandshof in Maasland.</p>
+<p><b>De lunch</b> bestaat o.a. uit een soep met garnituur en/of met brood. Ik maak de soep bij voorkeur met verse seizoensgebonden producten. Laat u verrassen door een uitgebreid aanbod. Als u de voorkeur geeft aan alleen een broodmaaltijd als lunch, dan kan dat natuurlijk ook.</p>
+<p>Voor de warme maaltijd gebruik ik graag seizoensproducten.
 </p>
 OET;
 
@@ -224,10 +224,10 @@ OET;
             case 'facilities':
                 $content = <<<OET
 <p>De Herstelkamer bestaat uit een slaapkamer met eigen badkamer. De kamer is verbonden aan het woonhuis maar heeft een eigen buitendeur. </p> 
-<p>De ruimte is gelijkvloers en zonder drempels. Kamer en badkamer zijn voorzien van vloerverwarming. Voor de warme zomerdagen is er een airco. Er zijn voorzieningen die een veilig gebruik van douche en toilet bevorderen. Als u dit wenst wordt een alarmknop ter beschikking gesteld waarmee u bij nood hulp kunt inroepen.</p>
-<p>U slaapt in een verstelbaar ziekenhuisbed waar eventueel een papegaai aan vastgemaakt kan worden om het overeind komen te vergemakkelijken.</p>
-<p>Koffie- en theefaciliteiten zijn in de kamer aanwezig, evenals een mini-bar. De maaltijden kunt u naar wens gebruiken in de Herstelkamer of in de gezellige woonkeuken. Op aanvraag en tegen een geringe vergoeding kan ook voor uw partner een warme maaltijd worden verzorgd. De woonkeuken staat ook tot uw beschikking om overdag bv. een krantje te lezen, een praatje te maken of gewoon even lekker te zitten met een kopje koffie of thee.</p> 
-<p>Er is een TV op de kamer en u kunt gratis gebruik maken van Wifi.</p>
+<p>De ruimte is gelijkvloers en zonder drempels. Kamer en badkamer zijn voorzien van vloerverwarming. Voor de warme zomerdagen is er een airco. Er zijn voorzieningen die een veilig gebruik van douche en toilet bevorderen. Als u dit wenst wordt een draagbaar alarm ter beschikking gesteld waarmee u bij nood hulp kunt inroepen.</p>
+<p>U slaapt in een verstelbaar zorgbed waar eventueel een papegaai aan vastgemaakt kan worden om het overeind komen te vergemakkelijken.</p>
+<p>Koffie- en theefaciliteiten zijn in de kamer aanwezig, evenals een koelkast en een magnetron. De maaltijden kunt u naar wens gebruiken in de Herstelkamer of in de gezellige woonkeuken. De woonkeuken staat ook tot uw beschikking om overdag bv. een krantje te lezen, een praatje te maken of gewoon even lekker te zitten met een kopje koffie of thee.</p> 
+<p>Er is een TV op de kamer en u kunt gebruik maken van Wifi.</p>
 
 <div class="article_img">
     <img class="inrichting" src="/images/minibar.jpg"/>
@@ -247,9 +247,9 @@ OET;
                 break;
             case 'whatItCosts':
                 $content = <<<OET
-<p>De Herstelkamer is een particulier bedrijf en ingeschreven bij de Kamer van Koophandel. U bent zelf verantwoordelijk voor betaling.</p> 
-<p>Een overnachting kost €135,- per nacht. Hierbij inbegrepen is €10,- voor het extra Corona-schoonmaakprotocol. Hierbij zijn 3 maaltijden, koffie- en thee inbegrepen. Bij reservering wordt een aanbetaling van 50% gevraagd. Het eindbedrag dient op de dag van vertrek te worden voldaan.</p>
-<p>Voor niet-inwoners van de gemeente Pijnacker-Nootdorp ben ik verplicht toeristenbelasting in rekening te brengen. Deze bedraagt € 2,12 per nacht.</p>
+<p>De Herstelkamer is een particulier bedrijf en ingeschreven bij de Kamer van Koophandel. De Herstelkamer heeft geen afspraken met ziektekostenverzekeraars. U bent zelf verantwoordelijk voor betaling.</p> 
+<p>Een overnachting kost €145,- per nacht, inclusief €10,- voor het extra Corona-schoonmaakprotocol. Bij de overnachting zijn 3 maaltijden, koffie- en thee inbegrepen. Bij reservering wordt een aanbetaling van €50,- gevraagd. Het eindbedrag dient bij vertrek te worden voldaan. PIN-betaling is mogelijk</p>
+<p>Voor niet-inwoners van de gemeente Pijnacker-Nootdorp ben ik verplicht toeristenbelasting in rekening te brengen. Deze bedraagt € 2,23 per nacht.</p>
 OET;
 
                 return [
@@ -259,7 +259,7 @@ OET;
                 break;
             case 'other':
                 $content = <<<OET
-<p>U kunt uw eigen bezoek ontvangen in de Herstelkamer. Zij kunnen daar niet overnachten. In overleg kan een logeermogelijkheid wel worden geboden.</p>
+<p>U kunt uw eigen bezoek ontvangen in de Herstelkamer. Er is geen overnachtingsmogelijkheid voor bezoek.</p>
 <p>Ons hondje (een dwergteckel) is dol op bezoek en laat dat ook merken. Hij is vriendelijk en speels. <b>Als u allergisch bent voor honden of als u geen affiniteit met ze hebt raad ik u een verblijf in de herstelkamer af.</b><br />
 U mag geen eigen huisdieren meenemen naar de herstelkamer.</p>
 <p>Ik voer een strikt <b>niet-roken beleid</b> binnenshuis. Overtreding van deze regel leidt tot beëindiging van het verblijf.</p>
@@ -280,7 +280,7 @@ OET;
                 $content = <<<OET
 <p>Vragen kunt u stellen via <a href="mailto:info@herstelkamer.nl">info@herstelkamer.nl</a></p>
 <p>of door te bellen: 06-18434805</p>
-<p>In overleg is het mogelijk de verblijfsruimtes van tevoren te bekijken, zodat u een goed beeld heeft van de voorzieningen.</p>
+<p>Voorafgaand aan uw verblijf heb ik graag een intakegesprek met u.</p>
 
 OET;
 
@@ -294,9 +294,9 @@ OET;
                 $content = <<<OET
 <p>Reserveren is op basis van <a href="/availability/{$date}">beschikbaarheid</a> van de kamer. </p>
 <p>Uw reservering is voor een vaste periode. U kunt ook een <b>optie</b> nemen voor een bepaalde periode. 
-Uw reservering is pas definitief nadat de reservering schriftelijk is bevestigd. Door te reserveren gaat u akkoord met de 
+Reserveren kan via de site, via de mail of telefonisch. Uw reservering is pas definitief nadat de reservering schriftelijk is bevestigd. Door te reserveren gaat u akkoord met de 
 <a href="/page/conditions">Algemene Voorwaarden</a>.</p>
-<p>U kunt uw aanvraag indienen via <a href="/booking/form">het reserveringsformulier.</a></p>
+<p>Indien de reservering door omstandigheden buiten uw beheer (zoals uitstel van de operatiedatum door het ziekenhuis) moet worden geannuleerd, wordt indien mogelijk de verblijfsdatum verplaatst. Zo niet, dan krijgt u de aanbetaling teruggestort.</p>
 OET;
 
                 return [
@@ -475,7 +475,7 @@ OET;
 <li>De eigenaar is niet aansprakelijk voor schade, verlies of diefstal van eigendommen van de gebruikers. Bij geschillen hierover zijn alle (juridische) kosten voor rekening van de gebruikers.</li>
 <li>Herstelkamer Nootdorp is niet aansprakelijk voor de gevolgen van handelingen verricht door vanwege gebruiker ingehuurde zorg- of dienstverleners.</li>
 <li>Alle risico's met betrekking tot een verblijf in Herstelkamer Nootdorp zijn voor rekening van de gebruiker.</li>
-<li>Beschadigingen en vermissingen van roerende en onroerende goederen van de eigenaar dienen door de gebruiker onmiddellijk te worden gemeld en vergoed aan de eigenaar. </li>
+<li>Beschadigingen en vermissingen van roerende en onroerende goederen van de eigenaar dienen door de gebruiker onmiddellijk te worden gemeld en vergoed aan de eigenaar.</li>
 <li>Gebruikers dienen instructies van de eigenaar met betrekking tot de huur en het gebruik van de Herstelkamer op te volgen.</li>
 <li>De eigenaar kan gebruikers, bij overtreding van deze Algemene Voorwaarden en bij ongepast gedrag, met onmiddellijke ingang de toegang tot Herstelkamer Nootdorp ontzeggen en/of weigeren, zonder restitutie van verblijfskosten.</li>
 <li>De administratie van de eigenaar is in beginsel bepalend bij onderling meningsverschil tenzij de gebruikers het tegendeel kunnen bewijzen.</li>
@@ -485,23 +485,21 @@ OET;
 
 <p><b>2. Reservering en bevestiging</b>
 <ol>
-<li>Het minimale verblijf in Herstelkamer Nootdorp is 4 dagen (3 nachten). Het maximale verblijf is 10 dagen (9 nachten).</li>
+<li>Het minimale verblijf in Herstelkamer Nootdorp is 3 nachten. Het maximale verblijf is 7 nachten.</li>
 <li>Voor het reserveren van een verblijf in De Herstelkamer worden geen extra reserveringskosten in rekening gebracht.</li>
 <li>Na ontvangst van uw reserveringsverzoek ontvangt u van Herstelkamer Nootdorp een schriftelijke bevestiging (mits plaats beschikbaar).</li>
-<li>De huurovereenkomst wordt schriftelijk aangegaan. Na ontvangst van uw aanbetaling is de reservering definitief.</li>
+<li>De overeenkomst wordt schriftelijk aangegaan. Na ontvangst van uw aanbetaling is de reservering definitief.</li>
 <li>Een reserveringsverzoek kan worden afgewezen zonder opgaaf van redenen.</li>
 <li>In onze reserveringsbevestiging wordt verwezen naar deze Algemene Voorwaarden. Door te reserveren bevestigt u dat u kennis heeft genomen van deze Algemene Voorwaarden.</li>
 </ol></p>
 
 <p><b>3. Betaling</b>
 <ol>
-<li>Bij reservering dient een aanbetaling van 50% van de totale huursom te worden voldaan. Het restant dient te worden betaald op de laatste dag van het verblijf. U ontvangt een factuur met de eindafrekening.</li>
-<li>De dag van aankomst en dag van vertrek worden bij een herstelverblijf berekend als volledige verblijfsdagen</li>
-<li>Extra faciliteiten zoals het draaien van een was op verzoek en het gebruik van de minibar worden apart in rekening gebracht. Een tarievenlijst wordt u bij aankomst ter hand gesteld. </li>
-<li>Voor het gebruik van het seniorenalarm (optioneel) wordt een borgsom van € 50,- gevraagd. Na teruggave van het alarm in ongeschonden staat wordt deze borgsom verrekend met de eindafrekening.</li>
+<li>Bij reservering dient een aanbetaling van €50,- van de totale huursom te worden voldaan. Het restant dient te worden betaald op de laatste dag van het verblijf. U ontvangt een factuur met de eindafrekening.</li>
+<li>Extra faciliteiten zoals het draaien van een was op verzoek kunnen apart in rekening worden gebracht.</li>
+<li>Voor het gebruik van het draagbare alarm (optioneel) wordt een borgsom van € 50,- gevraagd. Na teruggave van het alarm in ongeschonden staat wordt deze borgsom verrekend met de eindafrekening.</li>
 <li>Het schoonmaken van ernstige vervuiling of het herstel van beschadigingen aan het interieur zullen separaat in rekening worden gebracht.</li>
 <li>De eigenaar kan in overleg met de gebruiker van deze voorwaarden afwijken.</li>
-<li>De tarieven vindt u op onze website.</li>
 </ol>
  
 <p><b>4. Annulering en no show (niet komen zonder annulering)</b>
@@ -510,7 +508,7 @@ OET;
 <li>Bij annulering en no show betaalt de contractant een vergoeding aan de eigenaar. Deze vergoeding bestaat uit:
 <ol type="a">
 <li>Tot 1 week voor ingangsdatum is de annulering kosteloos.</li>
-<li>Bij annulering binnen 1 week voor ingangsdatum is 50% van het bedrag als vergoeding verschuldigd. Een uitzondering op deze regel kan worden gemaakt indien er sprake is van overmacht. Dit ter beoordeling van de eigenaar.</li>
+<li>Bij annulering binnen 1 week voor ingangsdatum is €50,- als vergoeding verschuldigd. Een uitzondering op deze regel kan worden gemaakt indien er sprake is van overmacht. Dit ter beoordeling van de eigenaar.</li>
 </ol>
 </li>
 </ol>
@@ -527,8 +525,8 @@ OET;
 <p><b>Aankomst en vertrek</b>
 <ol>
 <li>Op de dag van aankomst kunt u vanaf 11.00 uur uw verblijf gebruiken.</li>
-<li>Op de dag van vertrek dient het verblijf om 15.00 uur vrij te zijn.</li>
-<li>Alleen in overleg kan van bovengenoemde tijden afgeweken worden.</li>
+<li>Op de dag van vertrek dient het verblijf om 12.00 uur vrij te zijn.</li>
+<li>In overleg kan van bovengenoemde tijden afgeweken worden.</li>
 <li>Bij voortijdig vertrek vindt geen restitutie plaats.</li>
 </ol></p>
  
@@ -554,7 +552,7 @@ Verder wordt, binnen de mogelijkheden, geprobeerd rekening te houden met de wens
 <li>Geluidsoverlast, met name tussen 22.00 en 07.00 uur, dient te worden voorkomen.</li>
 <li>Het meebrengen van huisdieren is niet toegestaan.</li>
 <li>Roken is niet toegestaan in Herstelkamer Nootdorp.</li>
-<li>Bezoekers zijn toegestaan maar mogen niet overnachten in Herstelkamer Nootdorp. In overleg kan een logeermogelijkheid worden geboden. </li>
+<li>Bezoekers zijn toegestaan maar mogen niet overnachten in Herstelkamer Nootdorp.</li>
 <li>Er kan een voertuig worden geparkeerd op de parkeerplaats op het eigen terrein voor Herstelkamer Nootdorp. Als deze parkeerplaats bezet is dient op een openbare parkeerplaats elders te worden geparkeerd.</li>
 </ol></p>
 OET;
