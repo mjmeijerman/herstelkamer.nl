@@ -63,8 +63,8 @@ final class DefaultController extends BaseController
     {
         $aboutMe = <<<OET
 <p>Mijn naam is Marga Schoots.</p> 
-<p>Vanuit mijn eigen ervaring met en betrokkenheid bij het verouderingsproces van mijn hoogbejaarde ouders, 
-ontstond de wens om iets te betekenen voor ouderen en/of alleenstaanden die tijdelijk een steuntje in de rug kunnen gebruiken.</p>
+<p>Vanuit mijn eigen ervaring met en betrokkenheid bij de zorgbehoefte van mijn ouders, 
+ontstond de wens om iets te betekenen voor iedereen die tijdelijk een steuntje in de rug kan gebruiken na bijvoorbeeld een medische ingreep.</p>
 OET;
 
         $whatIDoForYou = <<<OET
@@ -72,7 +72,7 @@ OET;
 OET;
 
         $whatItCosts = <<<OET
-<p>De Herstelkamer is een particulier bedrijf en ingeschreven bij de Kamer van Koophandel. U bent zelf verantwoordelijk voor betaling.</p> 
+<p>De Herstelkamer is een particulier bedrijf en ingeschreven bij de Kamer van Koophandel. De Herstelkamer heeft geen afspraken met ziektekostenverzekeraars. U bent zelf verantwoordelijk voor betaling.</p> 
 OET;
 
         $questions = <<<OET
@@ -96,14 +96,14 @@ OET;
 
         $meals = <<<EOT
 <p>Koken is mijn passie. Ik kook met liefde, zorg en aandacht.<br />
-Met specifieke dieetwensen wordt rekening gehouden.</p>
+Met specifieke dieetwensen houd ik rekening.</p>
 <p>
 Heeft u een lievelingsgerecht of een gerecht waar u een speciale herinnering bij heeft? Vertel het mij en ik maak het voor u.
 </p>
 EOT;
 
         $other = <<<OET
-<p>U kunt uw eigen bezoek ontvangen in de Herstelkamer. Zij kunnen daar niet overnachten.</p>
+<p>U kunt uw eigen bezoek ontvangen in de Herstelkamer. Er is geen overnachtingsmogelijkheid voor bezoek.</p>
 OET;
 
         $date = date('Y-m');
