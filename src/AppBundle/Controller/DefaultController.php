@@ -167,7 +167,7 @@ niet afhankelijk wil zijn van hulp van buren, vrienden of familie. Kernwoorden z
 lekker eten, een luxe gevoel.</p>
 <p>Bij de inrichting van de ruimte is rekening gehouden met personen die herstellende zijn en weer op kracht moeten komen. 
 Er zijn voorzieningen die hier rekening mee houden: een verstelbaar zorgbed, handgrepen in de badkamer, de mogelijkheid om 
-zittend te douchen en een draagbaar alarm. De ruimte is niet toereikend voor geschikt met een permanente beperking, 
+zittend te douchen en een draagbaar alarm. De ruimte is niet geschikt voor personen met een permanente beperking, 
 voor personen die doorlopend medische zorg behoeven of voor mensen met een geestelijke aandoening (o.a. dementie).</p>
 <p>Het verblijf is op basis van volpension (ontbijt, lunch, diner). De maaltijden worden vers bereid en in overleg met u samengesteld.</p>
 <p>Het verblijf is gericht op herstel en de verhuurperiode is kort. De minimale verblijfsduur is 3 nachten, de maximale verblijfsduur is 7 nachten.</p>
@@ -248,7 +248,7 @@ OET;
             case 'whatItCosts':
                 $content = <<<OET
 <p>De Herstelkamer is een particulier bedrijf en ingeschreven bij de Kamer van Koophandel. De Herstelkamer heeft geen afspraken met ziektekostenverzekeraars. U bent zelf verantwoordelijk voor betaling.</p> 
-<p>Een overnachting kost €145,- per nacht, inclusief €10,- voor het extra Corona-schoonmaakprotocol. Bij de overnachting zijn 3 maaltijden, koffie- en thee inbegrepen. Bij reservering wordt een aanbetaling van €50,- gevraagd. Het eindbedrag dient bij vertrek te worden voldaan. PIN-betaling is mogelijk</p>
+<p>Een overnachting kost €145,- per nacht, exclusief €10,- per verblijf voor het extra Corona-schoonmaakprotocol. Bij de overnachting zijn 3 maaltijden, koffie- en thee inbegrepen. Bij reservering wordt een aanbetaling van €50,- gevraagd. Het eindbedrag dient bij vertrek te worden voldaan. PIN-betaling is mogelijk</p>
 <p>Voor niet-inwoners van de gemeente Pijnacker-Nootdorp ben ik verplicht toeristenbelasting in rekening te brengen. Deze bedraagt € 2,23 per nacht.</p>
 OET;
 
