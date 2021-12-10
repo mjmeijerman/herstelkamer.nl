@@ -1,2 +1,0 @@
-project_root: '{{ deploy_root }}/test.herstelkamer.nl'
-mailer_delivery_address: ['markmeijerman@gmail.com']
