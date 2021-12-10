@@ -3,7 +3,7 @@ webserver_production
 webserver_staging
 
 [webserver_production]
-herstelkamer_production ansible_ssh_host=herstelkamer.nl
+herstelkamer_production ansible_ssh_host=vps1.markmeijerman.nl
 
 [webserver_staging]
-herstelkamer_staging ansible_ssh_host=staging.herstelkamer.nl
+herstelkamer_staging ansible_ssh_host=vps1.markmeijerman.nl
