@@ -3,17 +3,29 @@
 namespace App\Controller;
 
 use App\Entity\Booking;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use App\Entity\FailedNotification;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\Mime\Email;
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Validator\Constraints\IsTrue;
+use Twig\Environment;
 
 final class BookingController extends BaseController
 {
+    public function __construct(
+        private MailerInterface $mailer,
+        private Environment $twig,
+        private EntityManagerInterface $entityManager
+    ) {
+    }
+
     /**
      * @Route("/booking/form", name="bookingForm")
      * @param Request $request
@@ -52,7 +64,7 @@ final class BookingController extends BaseController
                 [
                     'label'  => 'Gewenste periode van:',
                     'widget' => 'single_text',
-                    'attr'   => ['placeholder' => 'dd-mm-jjjj']
+                    'attr'   => ['placeholder' => 'dd-mm-jjjj'],
                 ]
             )
             ->add(
@@ -85,14 +97,14 @@ final class BookingController extends BaseController
 
         if ($form->isSubmitted() && $form->isValid()) {
 
-            $this->mailer()->send(
+            $this->sendMail(
                 'Reserveringsverzoek ontvangen',
                 $booking->getEmailAddress(),
                 'mails/booking_to_applicant.html.twig',
                 ['name' => $booking->getName()]
             );
 
-            $this->mailer()->send(
+            $this->sendMail(
                 'Nieuw reserveringsverzoek',
                 $this->getParameter('mailer_user'),
                 'mails/booking_to_company.html.twig',
@@ -115,5 +127,38 @@ final class BookingController extends BaseController
         }
 
         return $this->render('booking/booking_form.html.twig', ['form' => $form->createView()]);
+    }
+
+    private function sendMail(
+        string $subject,
+        string $to,
+        string $templateLocation,
+        array $parameters = []
+    ): void {
+        try {
+            $message = (new Email())
+                ->subject($subject)
+                ->from($this->getParameter('mailer_user'))
+                ->to($to)
+                ->html(
+                    $this->twig->render(
+                        $templateLocation,
+                        $parameters
+                    )
+                );
+
+            $this->mailer->send($message);
+        } catch (\Exception $exception) {
+            $failedNotification = FailedNotification::create(
+                $subject,
+                $to,
+                $templateLocation,
+                $parameters,
+                $exception->getMessage()
+            );
+
+            $this->entityManager->persist($failedNotification);
+            $this->entityManager->flush();
+        }
     }
 }

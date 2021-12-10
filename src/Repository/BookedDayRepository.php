@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Entity;
+namespace App\Repository;
 
-use Doctrine\ORM\EntityRepository;
+use App\Entity\BookedDayStatus;
+use Doctrine\DBAL\Connection;
 
-/**
- * Class BookedDays
- * @package App\Entity
- */
-final class BookedDayRepository extends EntityRepository
+final class BookedDayRepository
 {
+    public function __construct(private Connection $connection)
+    {
+    }
+
     /**
      * @param \DateTimeImmutable $beginningOfTheMonth
      * @param \DateTimeImmutable $endOfTheMonth
@@ -20,7 +21,7 @@ final class BookedDayRepository extends EntityRepository
         \DateTimeImmutable $beginningOfTheMonth,
         \DateTimeImmutable $endOfTheMonth
     ): array {
-        $connection = $this->getEntityManager()->getConnection();
+        $connection = $this->connection;
 
         $sql = <<<EOQ
 SELECT

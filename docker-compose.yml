@@ -53,6 +53,18 @@ services:
     volumes:
       - ./:/opt/project
 
+  herstelkamer-mailhog:
+    build: docker/mailhog
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik-herstelkamer"
+      - "traefik.http.routers.herstelkamer-mailhog.rule=Host(`mailhog.herstelkamer.localhost`)"
+      - "traefik.http.routers.herstelkamer-mailhog.entrypoints=web"
+      - "traefik.http.services.herstelkamer-mailhog.loadbalancer.server.port=8025"
+    networks:
+      - traefik-herstelkamer
+      - default
+
 volumes:
   database-herstelkamer:
 

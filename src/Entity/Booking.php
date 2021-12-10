@@ -45,14 +45,14 @@ final class Booking
 
     /**
      * @var \DateTime|null
-     * @Assert\Date(message="Dit is geen geldige datum")
+     * @Assert\Type("\DateTimeInterface")
      * @Assert\NotBlank(message="Het is verplicht om een startdatum in te vullen")
      */
     protected $bookingStart;
 
     /**
      * @var \DateTime|null
-     * @Assert\Date(message="Dit is geen geldige datum")
+     * @Assert\Type("\DateTimeInterface")
      * @Assert\NotBlank(message="Het is verplicht om een einddatum in te vullen")
      */
     protected $bookingEnd;

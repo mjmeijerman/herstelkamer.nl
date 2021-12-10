@@ -2,8 +2,9 @@
 
 namespace App\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use App\Repository\BookedDayRepository;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Routing\Annotation\Route;
 
 final class DefaultController extends BaseController
 {
@@ -34,7 +35,7 @@ final class DefaultController extends BaseController
     /**
      * @Route("/availability/{monthYear}", name="availability")
      */
-    public function availabilityAction(string $monthYear)
+    public function availabilityAction(BookedDayRepository $bookedDayRepository, string $monthYear)
     {
         $date                = \DateTimeImmutable::createFromFormat('Y-m-d H:i:s', $monthYear . '-01 00:00:00');
         $beginningOfTheMonth = $date->modify('first day of this month 00:00:00');
@@ -43,7 +44,7 @@ final class DefaultController extends BaseController
         $dayOfTheWeekFirstDayOfTheMonth = $beginningOfTheMonth->format('N');
         $numberOfDaysInTheMonth         = $endOfTheMonth->format('d');
 
-        $bookedDays = $this->bookedDayRepository()->findAllForMonth($beginningOfTheMonth, $endOfTheMonth);
+        $bookedDays = $bookedDayRepository->findAllForMonth($beginningOfTheMonth, $endOfTheMonth);
 
         return $this->render(
             'booking/availability.html.twig',

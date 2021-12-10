@@ -19,7 +19,7 @@ build:
 .PHONY: config
 config:
   # copy -n does not overwrite the target if it exists, but exits with an error, so || true ignores the error
-	cp -n app/config/parameters.yml.dist app/config/parameters.yml || true
+	cp -n .env.dist .env || true
 
 ## up: 		Runs local environment
 .PHONY: up

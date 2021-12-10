@@ -1,0 +1,19 @@
+monolog:
+    handlers:
+        main:
+            type:         fingers_crossed
+            action_level: warning
+            excluded_404s:
+                - ^/
+            handler:      deduplicated
+        deduplicated:
+            type:    deduplication
+            handler: symfony_mailer
+        symfony_mailer:
+            type:       symfony_mailer
+            from_email: '%default_email_sender%'
+            to_email:   'markmeijerman@gmail.com'
+            subject:    'Jurysteem STAGING: An Error Occurred! %%message%%'
+            level:      debug
+            formatter:  monolog.formatter.html
+            content_type: text/html
