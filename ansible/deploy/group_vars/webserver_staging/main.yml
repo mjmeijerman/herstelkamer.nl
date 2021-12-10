@@ -1,2 +1,3 @@
 project_root: '{{ deploy_root }}/staging.herstelkamer.nl'
 mailer_delivery_address: ['markmeijerman@gmail.com']
+application_env: "staging"
