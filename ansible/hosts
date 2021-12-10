@@ -1,0 +1,9 @@
+[webserver:children]
+webserver_production
+webserver_test
+
+[webserver_production]
+herstelkamer_production ansible_ssh_host=herstelkamer.nl
+
+[webserver_test]
+herstelkamer_test ansible_ssh_host=test.herstelkamer.nl

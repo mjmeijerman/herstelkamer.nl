@@ -1,0 +1,62 @@
+version: '3.5'
+services:
+  herstelkamer-database:
+    build: docker/mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: herstelkamer
+      MYSQL_USER: herstelkamer
+      MYSQL_PASSWORD: herstelkamer
+    volumes:
+      - database-herstelkamer:/var/lib/mysql
+      - ./data:/docker-entrypoint-initdb.d
+    ports:
+      - "8096:3306"
+
+  herstelkamer-webserver:
+    build: docker/nginx
+    depends_on:
+      - php-fpm
+    volumes:
+      - ./:/opt/project
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik-herstelkamer"
+      - "traefik.http.routers.herstelkamer.rule=Host(`herstelkamer.localhost`)"
+      - "traefik.http.routers.herstelkamer.entrypoints=web"
+    networks:
+      - traefik-herstelkamer
+      - default
+
+  php-cli:
+    build: docker/php-cli
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      COMPOSER_HOME: "/opt/project/var/cache/.composer"
+      PHP_IDE_CONFIG: "serverName=localhost"
+      COMPOSER_MEMORY_LIMIT: "-1"
+    depends_on:
+      - "herstelkamer-database"
+    volumes:
+      - ./:/opt/project
+      - ~/.ssh/id_rsa:/root/.ssh/id_rsa
+      - ~/.ssh/known_hosts:/root/.ssh/known_hosts
+
+  php-fpm:
+    build: docker/php-fpm
+    environment:
+      COMPOSER_HOME: "/opt/project/var/cache/.composer"
+      PHP_IDE_CONFIG: "serverName=localhost"
+    depends_on:
+      - "herstelkamer-database"
+    volumes:
+      - ./:/opt/project
+
+volumes:
+  database-herstelkamer:
+
+networks:
+  traefik-herstelkamer:
+    external: true
+    name: traefik-herstelkamer

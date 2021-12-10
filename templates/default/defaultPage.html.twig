@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div id="content">
+
+        <div class="article">
+            <h1>{{ content.title }}</h1>
+            {% if app.request.get('page') == 'aboutMe' %}
+                <img src="{{ asset('images/wiebenik.jpeg') }}">
+            {% endif %}
+            {{ content.content|raw }}
+            {% if app.request.get('page') == 'conditions' %}
+                <p><a href="{{ asset('documents/algemene_voorwaarden.pdf') }}" target="_blank">Download hier als
+                        PDF</a></p>
+            {% endif %}
+            <br/><br/><br/>
+            <div class='back_link'>
+                <a href='../'>« Terug naar homepage</a>
+            </div>
+
+            <div class='reserveer_button'>
+                <a href="{{ path('bookingForm') }}" class='button'>Reserveren</a>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

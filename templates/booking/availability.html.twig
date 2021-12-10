@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <h1>
+        <a href="{{ path('availability', { 'monthYear': app.request.get('monthYear')|date_modify("-1 month")|date("Y-m") }) }}">«</a>
+        {{ monthYear }}
+        <a href="{{ path('availability', { 'monthYear': app.request.get('monthYear')|date_modify("+1 month")|date("Y-m") }) }}">»</a>
+    </h1>
+    <table border="1">
+        <tr>
+            <th width="14%">Maandag</th>
+            <th width="14%">Dinsdag</th>
+            <th width="14%">Woensdag</th>
+            <th width="14%">Donderdag</th>
+            <th width="14%">Vrijdag</th>
+            <th width="14%">Zaterdag</th>
+            <th width="14%">Zondag</th>
+        </tr>
+        <tr align="center">
+            {% set j = 1 %}
+            {% for i in 1..dayOfTheWeekFirstDayOfTheMonth-1 %}
+                <td></td>
+            {% endfor %}
+            {% for i in 1..numberOfDaysInTheMonth %}
+            {% set j = j + 1 %}
+            {% if not (i + dayOfTheWeekFirstDayOfTheMonth - 2)%7 %}
+        </tr>
+        <tr align="center">
+            {% set j = 1 %}
+            {% endif %}
+            {% set class = 'availability_available' %}
+            {% if bookedDays[i] is defined %}
+                {% set class = 'availability_' ~ bookedDays[i] %}
+            {% endif %}
+            <td class="{{ class }}">{{ i }}</td>
+            {% endfor %}
+            {% if j<7 %}
+                {% for i in j+1..7 %}
+                    <td></td>
+                {% endfor %}
+            {% endif %}
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td class="availability_available">Beschikbaar</td>
+        </tr>
+        <tr>
+            <td class="availability_under_option">Onder optie</td>
+        </tr>
+        <tr>
+            <td class="availability_booked">Niet beschikbaar</td>
+        </tr>
+    </table>
+
+    <br/>
+    <div class='back_link'>
+        <a href='../'>« Terug naar homepage</a>
+    </div>
+{% endblock %}

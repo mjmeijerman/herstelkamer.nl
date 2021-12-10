@@ -1,7 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b85187ed-0a7c-4311-9a0f-9c4cd17cce0e" name="Default Changelist" comment="" />
+    <list default="true" id="b85187ed-0a7c-4311-9a0f-9c4cd17cce0e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/ansible-galaxy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/deploy/deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/deploy/group_vars/webserver/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/deploy/group_vars/webserver/secure.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/deploy/group_vars/webserver_production/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/deploy/group_vars/webserver_production/secure.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/deploy/group_vars/webserver_test/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/deploy/group_vars/webserver_test/secure.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/deploy/tasks/finalize_hooks.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/deploy/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/deploy/templates/parameters.yml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/hosts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles_galaxy/f500.project_deploy/COPYING" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles_galaxy/f500.project_deploy/COPYING.LESSER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles_galaxy/f500.project_deploy/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles_galaxy/f500.project_deploy/defaults/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles_galaxy/f500.project_deploy/meta/.galaxy_install_info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles_galaxy/f500.project_deploy/meta/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible/roles_galaxy/f500.project_deploy/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/bump-tag.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/composer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/console" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/phpd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/xdebug.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mariadb/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/site.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/php-cli/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/php-cli/xdebug.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/php-fpm/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/php-fpm/xdebug.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/documents/algemene_voorwaarden.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/OpenSans-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/alarm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/bloemetje.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/contact.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/douche.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/foto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/foto_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fotoboek/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/inrichting1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/inrichting2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/inrichting3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo_color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/minibar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pablo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/papegaai.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/photo-camera.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/toilet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wastafel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/wiebenik.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/fos_js_routes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/BookedDay.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/BookedDayRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/BookedDayStatus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Booking.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/FailedNotification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,13 +281,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/dev" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/translations" />
+      <recent name="$PROJECT_DIR$/src/Service" />
+      <recent name="$PROJECT_DIR$/src/Entity" />
+      <recent name="$PROJECT_DIR$/src/Controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dev" />
@@ -199,7 +316,7 @@
       <workItem from="1632728964805" duration="1007000" />
       <workItem from="1632913052471" duration="375000" />
       <workItem from="1636127306920" duration="336000" />
-      <workItem from="1639135630534" duration="4426000" />
+      <workItem from="1639135630534" duration="6097000" />
     </task>
     <servers />
   </component>

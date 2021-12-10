@@ -1,0 +1,115 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+<div id="content">
+
+    <h1>Aanvraag reservering</h1>
+{#	<p style="color:red">#}
+{#		De Herstelkamer is in de maand oktober niet beschikbaar, voor de periode daarna#}
+{#		kunt u contact opnemen via <a href="mailto:info@herstelkamer.nl">info@herstelkamer.nl</a>#}
+{#	</p>#}
+    {{ form_start(form) }}
+
+    {{ form_errors(form) }}
+
+    <div class='form_element'>
+		<div class='form_element_label'>
+			{{ form_errors(form.name) }}
+			{{ form_label(form.name) }}
+		</div>
+		<div class='form_element_widget'>
+			{{ form_widget(form.name) }}
+		</div>
+    </div>
+
+    <div class='form_element'>
+		<div class='form_element_label'>
+			{{ form_errors(form.streetNumber) }}
+			{{ form_label(form.streetNumber) }}
+		</div>
+		<div class='form_element_widget'>
+			{{ form_widget(form.streetNumber) }}
+		</div>
+    </div>
+
+    <div class='form_element'>
+		<div class='form_element_label'>
+			{{ form_label(form.zipCode) }}
+			{{ form_errors(form.zipCode) }}
+		</div>
+		<div class='form_element_widget'>
+			{{ form_widget(form.zipCode) }}
+		</div>
+    </div>
+
+    <div class='form_element'>
+		<div class='form_element_label'>
+			{{ form_label(form.city) }}
+			{{ form_errors(form.city) }}
+		</div>
+		<div class='form_element_widget'>
+			{{ form_widget(form.city) }}
+		</div>
+    </div>
+
+    <div class='form_element'>
+		<div class='form_element_label'>
+			{{ form_label(form.phoneNumber) }}
+			{{ form_errors(form.phoneNumber) }}
+		</div>
+		<div class='form_element_widget'>
+			{{ form_widget(form.phoneNumber) }}
+		</div>
+    </div>
+
+    <div class='form_element'>
+		<div class='form_element_label'>
+			{{ form_label(form.emailAddress) }}
+			{{ form_errors(form.emailAddress) }}
+		</div>
+		<div class='form_element_widget'>
+			{{ form_widget(form.emailAddress) }}
+		</div>
+    </div>
+
+    <div class='form_element'>
+		<div class='form_element_label'>
+			{{ form_label(form.bookingStart) }}
+			{{ form_errors(form.bookingStart) }}
+			{{ form_errors(form.bookingEnd) }}
+		</div>
+		<div class='form_element_widget'>
+			{{ form_widget(form.bookingStart) }} - {{ form_widget(form.bookingEnd) }}
+		</div>
+    </div>
+
+    <div class='form_element'>
+		<div class='form_element_label'>
+			{{ form_label(form.remarks) }}
+			{{ form_errors(form.remarks) }}
+		</div>
+		<div class='form_element_widget'>
+			{{ form_widget(form.remarks) }}
+		</div>
+    </div>
+
+    <div class='form_element'>
+        {{ form_errors(form.agreeTerms) }}
+        {{ form_widget(form.agreeTerms) }}
+        {{ form_label(form.agreeTerms) }}
+    </div>
+
+    <div>
+        {{ form_widget(form.save) }}
+    </div>
+
+    {{ form_end(form) }}
+
+    <br/><br/><br/>
+    <div class='back_link'>
+        <a href='../'>« Terug naar homepage</a>
+    </div>
+
+</div>
+{% endblock %}
