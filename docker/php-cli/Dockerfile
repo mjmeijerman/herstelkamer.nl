@@ -20,7 +20,7 @@ RUN apk --no-cache add --virtual .build-dependencies \
     && docker-php-ext-install \
         bcmath \
         sockets \
-    && docker-php-ext-configure gd -with-freetype --with-jpeg \
+    && docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg \
     && docker-php-ext-install zip \
     && docker-php-ext-install gd \
     && docker-php-ext-install exif \
