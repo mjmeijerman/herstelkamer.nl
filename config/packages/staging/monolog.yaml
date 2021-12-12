@@ -13,7 +13,7 @@ monolog:
             type:       symfony_mailer
             from_email: '%mailer_user%'
             to_email:   'markmeijerman@gmail.com'
-            subject:    'Jurysteem STAGING: An Error Occurred! %%message%%'
+            subject:    'Herstelkamer STAGING: An Error Occurred! %%message%%'
             level:      debug
             formatter:  monolog.formatter.html
             content_type: text/html
