@@ -48,7 +48,6 @@ final class BookingController extends BaseController
                 [
                     'label' => 'Straat + nr.:',
                     'required' => true,
-                    'constraints' => [new NotBlank(['message' => 'general.not_blank'])],
                 ],
             )
             ->add(
@@ -57,7 +56,6 @@ final class BookingController extends BaseController
                 [
                     'label' => 'Postcode:',
                     'required' => true,
-                    'constraints' => [new NotBlank(['message' => 'general.not_blank'])],
                 ])
             ->add(
                 'city',
@@ -65,7 +63,6 @@ final class BookingController extends BaseController
                 [
                     'label' => 'Plaats:',
                     'required' => true,
-                    'constraints' => [new NotBlank(['message' => 'general.not_blank'])],
                 ])
             ->add(
                 'phoneNumber',
@@ -73,7 +70,6 @@ final class BookingController extends BaseController
                 [
                     'label' => 'Telefoonnummer:',
                     'required' => true,
-                    'constraints' => [new NotBlank(['message' => 'general.not_blank'])],
                 ]
             )
             ->add(
@@ -82,10 +78,6 @@ final class BookingController extends BaseController
                 [
                     'label' => 'Email adres:',
                     'required' => true,
-                    'constraints' => [
-                        new NotBlank(['message' => 'general.not_blank']),
-                        new \Symfony\Component\Validator\Constraints\Email(['message' => 'general.invalid_email'])
-                    ],
                 ]
             )
             ->add(
@@ -96,9 +88,6 @@ final class BookingController extends BaseController
                     'widget' => 'single_text',
                     'attr'   => ['placeholder' => 'dd-mm-jjjj'],
                     'required' => true,
-                    'constraints' => [
-                        new NotBlank(['message' => 'general.not_blank'])
-                    ],
                 ]
             )
             ->add(
@@ -109,9 +98,6 @@ final class BookingController extends BaseController
                     'widget' => 'single_text',
                     'attr' => ['placeholder' => 'dd-mm-jjjj'],
                     'required' => true,
-                    'constraints' => [
-                        new NotBlank(['message' => 'general.not_blank'])
-                    ],
                 ],
             )
             ->add(

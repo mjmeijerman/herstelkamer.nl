@@ -1,4 +1,1 @@
 This value should be true.: Onderstaand veld is verplicht
-general:
-  not_blank: Dit veld is verplicht
-  invalid_email: Ongeldig email adres
