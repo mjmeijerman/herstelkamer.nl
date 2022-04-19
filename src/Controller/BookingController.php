@@ -15,6 +15,7 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Validator\Constraints\IsTrue;
+use Symfony\Component\Validator\Constraints\NotBlank;
 use Twig\Environment;
 
 final class BookingController extends BaseController
@@ -44,19 +45,48 @@ final class BookingController extends BaseController
             ->add(
                 'streetNumber',
                 TextType::class,
-                ['label' => 'Straat + nr.:']
+                [
+                    'label' => 'Straat + nr.:',
+                    'required' => true,
+                    'constraints' => [new NotBlank(['message' => 'general.not_blank'])],
+                ],
             )
-            ->add('zipCode', TextType::class, ['label' => 'Postcode:'])
-            ->add('city', TextType::class, ['label' => 'Plaats:'])
+            ->add(
+                'zipCode',
+                TextType::class,
+                [
+                    'label' => 'Postcode:',
+                    'required' => true,
+                    'constraints' => [new NotBlank(['message' => 'general.not_blank'])],
+                ])
+            ->add(
+                'city',
+                TextType::class,
+                [
+                    'label' => 'Plaats:',
+                    'required' => true,
+                    'constraints' => [new NotBlank(['message' => 'general.not_blank'])],
+                ])
             ->add(
                 'phoneNumber',
                 TextType::class,
-                ['label' => 'Telefoonnummer:']
+                [
+                    'label' => 'Telefoonnummer:',
+                    'required' => true,
+                    'constraints' => [new NotBlank(['message' => 'general.not_blank'])],
+                ]
             )
             ->add(
                 'emailAddress',
                 TextType::class,
-                ['label' => 'Email adres:']
+                [
+                    'label' => 'Email adres:',
+                    'required' => true,
+                    'constraints' => [
+                        new NotBlank(['message' => 'general.not_blank']),
+                        new \Symfony\Component\Validator\Constraints\Email(['message' => 'general.invalid_email'])
+                    ],
+                ]
             )
             ->add(
                 'bookingStart',
@@ -65,12 +95,24 @@ final class BookingController extends BaseController
                     'label'  => 'Gewenste periode van:',
                     'widget' => 'single_text',
                     'attr'   => ['placeholder' => 'dd-mm-jjjj'],
+                    'required' => true,
+                    'constraints' => [
+                        new NotBlank(['message' => 'general.not_blank'])
+                    ],
                 ]
             )
             ->add(
                 'bookingEnd',
                 DateType::class,
-                ['label' => 'Gewenste periode:', 'widget' => 'single_text', 'attr' => ['placeholder' => 'dd-mm-jjjj']]
+                [
+                    'label' => 'Gewenste periode:',
+                    'widget' => 'single_text',
+                    'attr' => ['placeholder' => 'dd-mm-jjjj'],
+                    'required' => true,
+                    'constraints' => [
+                        new NotBlank(['message' => 'general.not_blank'])
+                    ],
+                ],
             )
             ->add(
                 'remarks',
@@ -83,6 +125,7 @@ final class BookingController extends BaseController
                 [
                     'label'       => 'Ik ga akkoord met de algemene voorwaarden',
                     'mapped'      => false,
+                    'required' => true,
                     'constraints' => new IsTrue(),
                 ]
             )
